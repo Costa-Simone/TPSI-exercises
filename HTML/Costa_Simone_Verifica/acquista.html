@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+
+   <head>
+   
+        <meta charset="UTF-8" />
+        <title> Amazon </title>
+   
+   </head>
+   
+   <body>
+      
+	  <table align="center" width="100">
+		<tr>
+			<td colspan="7"> <img src="img/amazon.png" usemap="#mappa" /> </td>
+		</tr>
+	  </table>
+	  
+	  <table align="center" width="40%">
+	  <form action="conferma.html">
+		<tr>
+			<td>
+				<font size="5" colspan="2" width="100%"> <b> Inserisci i dati relativi all'acquisto </b> </font>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" width="50%">
+				
+					<span> Luogo di spedizione: </span>
+			</td>
+			<td colspan="1" width="50%">
+				
+				<input type="radio" name="optConsegna"> Domicilio
+				<br/>
+				<input type="radio" name="optConsegna"> Ufficio postale
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" width="50%">
+				
+					<span> Opzioni aggiuntive: </span>
+			</td>
+			<td colspan="1" width="50%">
+
+				<input type="checkbox" name="chkAss"> Assicurazione
+				<br/>
+				<input type="checkbox" name="chkCons"> Consegna veloce
+			
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" width="50%">
+				
+					<span> Tipo di pagamento: </span>
+			</td>
+			<td colspan="1" width="50%">
+				<SELECT name="listSelect">
+					<option>  visa  </option>     
+				    <option> mastercard </option>
+					<option> american express </option>
+				</SELECT>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" width="50%">
+				
+					<span> Note: </span>
+			</td>
+			<td colspan="1" width="50%">
+				<textarea name="txtArea"> </textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" width="50%">
+					<button type="submit" placeholder="invia"> Invia </button>
+			</td>
+			<td colspan="1" width="50%">
+
+			</td>
+		</tr>
+		</form>
+	  </table>
+	  
+   </body>
+
+</html>

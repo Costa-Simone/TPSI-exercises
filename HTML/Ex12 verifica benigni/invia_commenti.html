@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+
+   <head>
+        <meta charset="UTF-8" />
+        <title> pagina2 </title>
+   </head>
+   
+   <body>
+   
+	<table border="1" align="center" width="90%">
+		<tr>
+			<th rowspan="2" colspan="1" width="10%"> Roberto Benigni </th>
+			<th colspan="6"> Altri film </th>
+		</tr>
+		<tr>
+			<th colspan="2"> Titolo </th>
+			<th colspan="4"> Descrizione </th>
+		</tr>
+		<tr>
+			<td> 1988 </td>
+			<td colspan="2" width="20%"> <b> Il piccolo diavolo </b> </td>
+			<td colspan="4"> Padre Maurizio viene chiamato a compiere un esorcismo per liberare una donna dall'essere che la stava possedendo. </td>
+		</tr>
+		<tr>
+			<td> 1994 </td>
+			<td colspan="2"> <b> Il mostro </b> </td>
+			<td colspan="4"> 
+				Loris è un giovane disoccupato che si guadagna da vivere con lavori saltuari. 
+				Una serie di equivoci porta la polizia a sospettare che Loris sia il maniaco sessuale e serial killer di donne che terrorizza il quartiere. 
+			</td>
+		</tr>
+		<tr>
+			<td> 2005 </td>
+			<td colspan="2"> <b> La tigre e la neve </b> </td>
+			<td colspan="4"> 
+				Attilio de Giovanni, svagato ed estroso professore di poesia, divorziato e padre di due preadolescenti, 
+				è innamorato perdutamente di Vittoria, una scrittrice che gli appare in sogno tutte le notti. 
+			</td>
+		</tr>
+	</table>
+	<br/>
+	<form>
+		<label for="txtParere"> Quale fra i film precedenti ti é piaciuto di piú? </label>
+		<input type="text" id="txtParere" autocomplete="off" required size="60" maxlength="60" />
+		
+		<br/> <br/>
+		
+		<label for="optSi"> Lo hai visto il film? </label>
+		<input type="radio" id="optSi" autocomplete="off" name="optVisto" /> Si
+		&nbsp; &nbsp; &nbsp;
+		<input type="radio" id="optNo" autocomplete="off" name="optVisto" />
+		
+		<br/> <br/>
+		
+		<label for="chkvolte"> Lo hai visto piú volte? </label>
+		<input type="checkbox" id="chkvolte" autocomplete="off" /> Si
+		
+		<br/> <br/>
+		
+		<label for="txtVoto"> Assegna un voto da 1 a 10: </label>
+		<input type="number" id="txtVoto" autocomplete="off" required size="60" min="1" max="10" />
+		<input value="invia" type="submit">
+		
+		<button> <a href="index.html"> <img src="ritorna.gif" /> </a> </button>
+		
+ 	</form>
+	
+   </body>
+   
+</html>

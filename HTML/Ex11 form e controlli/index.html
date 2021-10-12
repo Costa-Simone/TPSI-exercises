@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+
+   <head>
+   
+        <meta charset="UTF-8" />
+        <title> Ex11 </title>
+   
+   </head>
+   
+   <body>
+   
+      <h1 align="center"> Pagina di registrazione </h1>
+	  
+	  <form action="pagina2.html">
+	  
+			<label for="txtNome"> Nome: </label>
+			<input type="text" id="txtNome" name="txtNome" placeholder="Inserisci il tuo Nome" autocomplete="off" required size="60" maxlength="12" />
+			
+			<br/> <br/>
+			
+			<label for="txtCognome"> Cognome: </label>
+			<input type="text" id="txtCognome" name="txtCognome" placeholder="Inserisci il tuo Cognome" autocomplete="off" required size="60" maxlength="12" />
+			
+			<br/> <br/>
+			
+			<label for="txtPassword"> Password: </label>
+			<input type="password" id="txtPassword" name="txtPassword" placeholder="Inserisci la password" autocomplete="off" required size="60" maxlength="12" />
+			
+			<br/> <br/>
+			
+			<label for="txtEta"> Età: </label>
+			<input type="number" id="txtEta" name="txtEta" placeholder="Inserisci l'età" autocomplete="off" required size="60" min="18" max="50" />
+			
+			<br/> <br/>
+			
+			<label for="txtImmagine"> Immagine: </label>
+			<input type="file" id="txtImmagine" name="txtImmagine" autocomplete="off" required size="60" />
+			
+			<br/> <br/>
+			
+			<p> Hobbies: </p>
+			<label for="chkSport"> Sport </label>
+			<input type="checkbox" id="chkSport" name="chkSport" autocomplete="off" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="chkCinema"> Cinema </label>
+			<input type="checkbox" id="chkCinema" name="chkCinema" autocomplete="off" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="chkInformatica"> Informatica </label>
+			<input type="checkbox" id="chkInformatica" name="chkInformatica" autocomplete="off" />
+			
+			<br/> <br/>
+			
+			<p> Scuola: </p>
+			
+			<label for="optItis"> Itis </label>
+			<input type="radio" id="optItis" name="optScuola" value="Itis" autocomplete="off" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="optLiceo"> Liceo </label>
+			<input type="radio" id="optLiceo" name="optScuola" value="Liceo" autocomplete="off" />
+			&nbsp;&nbsp;&nbsp;
+			<label for="optInformatica"> Informatica </label>
+			<input type="radio" id="optInformatica" name="optScuola" value="informatica" autocomplete="off" />
+			
+			<br/> <br/>
+			
+			<label for="txtCommenti"> Commenti </label>
+			<textarea id="txtCommenti" name="txtCommenti" cols="30" rows="7" placeholder="Inserisci qui i tuoi commenti" autocomplete="off"></textarea>
+			
+			<br/> <br/>
+			
+			<label for="lstProvincia"> Provincia di residenza </label>
+			<select id="lstProvincia" name="lstProvincia" >
+				<option> Cuneo </option>
+				<option> Torino </option>
+				<option> Asti </option>
+				<option> Alessandria </option>
+			</select>
+			
+			<br/> <br/>
+			
+			<input value="reset"" type="reset" />
+			<input value="invia" type="submit" />
+	  </form>
+	  
+   </body>
+
+</html>
+
+
+file:///D:/3%C2%B0%20superiore/T.P.S.I.T/HTML/Ex11%20form%20e%20controlli/pagina2.html
+?txtNome=Simone
+&txtCognome=Cosyt
+&txtPassword=sfdsfdsadasd
+&txtEta=18
+&txtImmagine=Koala.jpg
+&chkCinema=on
+&optScuola=on
+&txtCommenti=pazzuerdo
+&lstProvincia=Cuneo
