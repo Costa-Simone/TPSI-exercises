@@ -1,0 +1,24 @@
+
+p.paragrafo3{
+	color:#0000FF;
+	font-style:italic;
+	font-weight:bold;
+}
+
+div{
+	width:100px;
+	height:100px;
+	background-color:#FFFF99;
+	margin:0 auto;
+	text-align:center;
+	line-height:100px;
+	border:1px solid black;
+}
+
+#div1{
+		background-image:url(img.jpg);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	color:rgb(255, 255, 255);
+}
