@@ -1,7 +1,7 @@
 
 p{
 	font-family:verdana, helvetica, sans-serif;
-	font-size:15 px;
+	font-size:15pt;
 	text-align:center;
 }
 
@@ -22,6 +22,7 @@ p span{
 	color:blue;
 	letter-spacing:-2px;
 	word-spacing:2px;
+	font-weight:normal;
 }
 
 div{

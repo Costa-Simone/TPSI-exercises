@@ -1,0 +1,20 @@
+
+.pulsante {
+	display:block;
+	border:1px solid #347;
+	width:100px;
+	margin:4px;
+	padding:10px;
+	text-align:center;
+	background-color:#CCCCCC;
+	color:#555555;
+	font-weight:bold;
+	border-left-width:5px;
+	text-decoration:none;
+}
+
+.pulsante:hover {
+	text-decoration:underline;
+	background-color:#555;
+	color:#CCC;
+}

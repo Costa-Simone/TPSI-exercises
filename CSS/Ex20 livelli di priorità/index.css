@@ -1,0 +1,28 @@
+
+p.paragrafo {
+	color:rgb(0, 0, 127);
+}
+
+p {
+	color:rgb(0, 127, 0);
+	margin:15px;
+}
+
+p#paragrafo {
+	color:rgb(127, 0, 0);
+}
+
+div#box1 {
+	background-color:#0FF;
+}
+
+div {
+	width:200px;
+	height:60px;
+	border:1px solid #333;
+	margin:15px;
+	padding:15px;
+	background-color:yellow !important;
+	text-align:center;
+	line-height:60px;
+}
