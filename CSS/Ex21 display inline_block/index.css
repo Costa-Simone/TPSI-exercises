@@ -1,0 +1,21 @@
+
+#wrapper {
+	/* text-align:center; */
+	margin:20px auto;
+	border:1px solid #555;
+	padding:20px;
+	width:300px;
+	background-color:rgb(180, 255, 180);
+}
+
+#wrapper label {
+	display:inline-block;
+	width:100px;
+	text-align:right;
+	margin-right:10px;
+}
+
+#wrapper input {
+	display:inline-block;
+	width:120px;
+}

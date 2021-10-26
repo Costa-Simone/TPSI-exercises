@@ -1,0 +1,22 @@
+
+#wrapper {
+	/* text-align:center; */
+	margin:20px auto;
+	border:1px solid #555;
+	padding:20px;
+	width:300px;
+	background-color:rgb(180, 255, 180);
+	display:grid;
+	grid-template-columns:120px auto;
+	grid-template-rows:25px 25px 25px 25px;
+	grid-column-gap:8px;
+	grid-row-gap:5px;
+}
+
+#wrapper label {
+	text-align:right;
+}
+
+#wrapper input {
+	width:120px;
+}

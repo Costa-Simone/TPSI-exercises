@@ -1,0 +1,24 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+#wrapper {
+	border:1px solid #555;
+	width:500px;
+	height:200px;
+	padding:15px;
+	margin:20px auto;
+	overflow:auto;
+}
+
+.clickable {
+	color:#00F;
+	text-decoration:underline;
+}
+
+.clickable:hover {
+	cursor:pointer;
+}
