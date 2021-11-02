@@ -1,0 +1,54 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	text-align: center;
+	margin: 25px;
+	font-size: 20pt;
+}
+
+a {
+	display: block;
+	width: 160px;
+	height: 45px;
+	background-color: #CCC;
+	border: 1px solid #AAA;
+	text-align: center;
+	line-height: 45px;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 2px;
+	color: #66A;
+	border-left-width: 5px;
+	border-radius: 6px;
+}
+/* Larghezza pulsante: 160 + 0 (padding) + 6 (border) + 4 (margin) = 170px */
+
+a:hover {
+	text-decoration: underline;
+	background-color: #66A;
+	color: #CCC;
+}
+
+ul {
+	border: 1px solid #999;
+	margin: 10px auto;
+	list-style-type: none;
+}
+
+ul.verticale {
+	width: 170px;
+}
+
+ul.orizzontale {
+	display: inline-block;
+	width: 680px;
+}
+
+ul.orizzontale li {
+	
+}

@@ -5,6 +5,18 @@
 	margin:0;
 }
 
+body {
+	background-image: url(bg.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+	background-color: rgb(234, 234, 234);
+}
+
+table {
+	width: 760px;
+	margin: 10px auto;
+}
+
 th {
 	background-color:#777;
 	padding:10px;
