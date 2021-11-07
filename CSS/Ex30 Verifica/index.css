@@ -1,0 +1,116 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Times New Roman, Times, serif;
+	font-size: 11pt;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Times New Roman, Times, serif;
+	font-size: 11pt;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Times New Roman, Times, serif;
+	font-size: 11pt;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Times New Roman, Times, serif;
+	font-size: 11pt;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Times New Roman, Times, serif;
+	font-size: 11pt;
+}
+
+.contenitore {
+	width: 760px;
+	margin: 1px auto;
+	background-color: #BBB;
+	border: 2px solid #000;
+}
+
+.titolo {
+	margin: 3px 3px;
+	border: 1px solid #777;
+	background-color: #DDD;
+}
+
+.menu {
+	margin: 3px 3px;
+	border: 1px solid #777;
+	background-color: #DDD;
+}
+
+.contenuto {
+	margin: 3px 3px;
+	border: 1px solid #777;
+	background-color: #DDD;
+}
+
+h1 {
+	margin: 20px 0px 10px 0px;
+	text-align: center;
+}
+
+h2 {
+	margin: 10px 0px 20px 0px;
+	text-align: center;
+}
+
+.menu {
+	font-size: 12px;
+	padding: 30px 0px;
+	text-align: center;
+}
+
+.menu a{
+	padding: 10px 18px;
+	color: #333;
+	border: 2px solid #777;
+	background-color: #CCC;
+}
+
+.menu a:hover {
+	color:#777;
+	background-color: #EEE;
+}
+
+.contenuto {
+	padding: 15px;
+	text-align: left;
+	height: 320px;
+	overflow: auto;
+}
+
+.contenuto img {
+	float: right;
+	margin: 10px;
+}
+
+#img2 {
+	display: block;
+	margin: 1px auto;
+}

@@ -1,0 +1,68 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+body {
+	background-color: #689;
+}
+
+h1 {
+	text-align: center;
+	color: #FFF;
+}
+
+#wrapper {
+	width: 350px;
+	margin: 30px 0px;
+	margin: 30px auto;
+	background-color: #FFF;
+	text-align: center;
+	padding: 20px 20px;
+	border-radius: 6px;
+}
+
+.username {
+	display: inline;
+}
+
+.password {
+	display: inline;
+}
+
+.invia {
+	display: inline;
+}
+
+.invia2 {
+	display: inline;
+	margin: 0px 130px;
+}
+
+#username {
+	text-align: left;
+	margin: 15px;
+	border: 1px solid #66F;
+	border-radius: 6px;
+}
+
+#password {
+	text-align: left;
+	margin: 15px;
+	border: 1px solid #66F;
+	border-radius: 6px;
+}
+
+#invia {
+	background-color: #689;
+	color: #FFF;
+	margin: 15px;
+	border: 1px solid #66F;
+	border-radius: 6px;
+}
+
+.input {
+	border: none;
+}
