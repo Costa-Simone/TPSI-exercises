@@ -1,0 +1,80 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+#wrapper {
+	text-align: center;
+	width: 380px;
+	margin: 30px auto;
+	padding: 40px;
+	background-color: #EEE;
+	border-radius: 20px;
+	border: 1px solid #000;
+}
+
+h2 {
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#comandi {
+	margin: 20px auto;
+	display: inline-block;
+	width: 130px;
+	text-align: center;
+}
+
+#stati {
+	margin: 20px 30px;
+	display: inline-block;
+	text-align: center;
+	right: 5px;
+	width: 180px;
+	background-color: #FFC;
+	border: 1px solid #000;
+	border-radius: 20px;
+}
+
+button {
+	width: 100px;
+	height: 40px;
+	background-color: #AFA;
+	border-radius: 6px;
+	box-shadow: 3px 3px #888;
+	margin: 5px auto;
+}
+
+#stati .null {
+	margin: 20px auto;
+	text-align: left;
+}
+
+#stati .null div {
+	display: inline-block;
+	background-color: #888;
+	box-shadow: 3px 3px #000;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
+
+.led {
+	margin: 0px auto;
+	width: 85px;
+	height: 16px;
+	font-size: 16px;
+	background-color: #111;
+}
+
+.led div {
+	margin: 5px 0;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #888;
+}
