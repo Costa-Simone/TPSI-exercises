@@ -45,10 +45,14 @@ ul.verticale {
 }
 
 ul.orizzontale {
-	display: inline-block;
 	width: 680px;
+	text-align: center;
 }
 
 ul.orizzontale li {
-	
+	display: inline-block;
+}
+
+ul.orizzontale li a{
+	margin: 0;
 }
