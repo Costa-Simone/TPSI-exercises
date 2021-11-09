@@ -1,0 +1,63 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:2%;
+}
+
+h1 {
+	text-align: center;
+}
+
+#wrapper {
+	width: 50%;
+	margin-left: 25%;
+	background-color: #777;
+	border: 1px solid #F00;
+	font-size: 20pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+header, nav, footer {
+	padding: 37px;
+}
+
+header {
+	background-color: #FF0;
+}
+
+nav {
+	background-color: #0F0;
+}
+
+footer {
+	background-color: #00F;
+}
+
+section {
+	background-color: #F0F;
+	border: 1px solid #000;
+	/* Permette al conenitore di sentire elementi Float interni */
+	overflow: auto;
+}
+
+section p {
+	padding: 25px;
+}
+
+article {
+	float: right;
+	background-color: #0FF;
+	width: 60%;
+	height: 160px;
+	margin-top: 0;
+}
+
+aside {
+	background-color: #0A0;
+	width: 30%;
+	height: 330px;
+	margin-top: 0; 
+	float: left;
+}
