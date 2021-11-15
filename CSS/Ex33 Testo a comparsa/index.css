@@ -1,0 +1,41 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	text-align: center;
+}
+
+#wrapper {
+	width: 400px;
+	height: 300px;
+	border: 1px solid black;
+	background-image: url(img.jpg);
+	background-size: cover;
+	margin: 35px auto;
+	position: relative;
+}
+
+#wrapper > p {
+	width: 380px;
+	font-size: 12pt;
+	text-align: center;
+	color: rgba(255, 255, 255, 0);
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#wrapper:hover > p {
+	color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#wrapper > p:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
