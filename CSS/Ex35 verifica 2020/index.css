@@ -1,0 +1,110 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 12pt;
+	color: #FCA800;
+	margin-bottom: 20px;
+}
+
+body {
+	background-color: black;
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+}
+
+form:nth-last-of-type(1) {
+	width: 500px;
+	background-color: #333;
+	margin: 50px auto;
+	padding: 25px;
+	border-radius: 20px;
+	position: relative;
+}
+
+form > label {
+	height: 30px;
+	margin: 10px auto;
+	line-height: 30px;
+	width: 150px;
+	color: #AAA;
+	float: left;
+}
+
+form > input.textbox {
+	height: 30px;
+	margin: 10px auto;
+	line-height: 30px;
+	width: 300px;
+	font-size: 9pt;
+	color: #FFF;
+	background-color: #1C1C1C;
+	border: 1px solid #323232;
+	padding-left: 35px;
+	background-image: url(img/matita.png);
+	background-position-x: 7px;
+	background-position-y: 5px;
+	background-repeat: no-repeat;
+}
+
+form > textarea {
+	width: 300px;
+	font-size: 9pt;
+	color: #FFF;
+	background-color: #1C1C1C;
+	border: 1px solid #323232;
+	height: 200px;
+	width: 327px;
+	padding-left: 10px;
+	line-height: 25px;
+	resize: none;
+}
+
+form > input.button {
+	width: 80px;
+	height: 30px;
+	background-color: orange;
+	color: #111;
+	font-weight: bold;
+	margin: 10px auto;
+	line-height: 30px;
+	border-radius: 10px;
+	border: none;
+	margin: 5px;
+}
+
+form > input.button:hover {
+	color: orange;
+	background-color: #111;
+	cursor: pointer;
+}
+
+form > div {
+	width: 125px;
+	height: 100px;
+	position: absolute;
+	bottom: 100px;
+	background-image: url(img/vallauri.png);
+	color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+form > div > p {
+	width: 95px;
+	height: 70px;
+	padding: 15px;
+}
+
+form > div:hover > p {
+	background-color: rgba(0, 0, 0, 80%);
+}
+
+form > div > p:hover {
+	color: rgba(255, 255, 255, 1);
+	font-size: 10pt;
+}

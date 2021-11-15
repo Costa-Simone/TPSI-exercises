@@ -1,0 +1,1 @@
+Non fare : l'ultima parte relativa alle media query per terminali con larghezza inferiore a 550px
