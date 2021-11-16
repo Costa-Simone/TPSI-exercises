@@ -1,0 +1,126 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	text-align: center;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: 10pt;
+	background-color: #aeaeae;
+}
+
+#wrapper {
+	width: 740px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #dff;
+	height: 100%;
+}
+
+#wrapper > #header {
+	height: 190px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-image: url(img/medusa.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+
+#wrapper > #header > h1 {
+	font-size: 30pt;
+	color: red;
+	padding: 15pt;
+}
+
+#wrapper > #header > h3 {
+	font-size: 16pt;
+	color: red;
+	padding: 8pt;
+}
+
+#wrapper > #mainBox {
+	width: 540px;
+	height: 250px;
+	padding: 12px;
+	overflow: auto;
+}
+
+#wrapper > #mainBox > h3 {
+	padding: 15px 20px;
+}
+
+#wrapper > #mainBox > div {
+	float: left;
+	width: 110px;
+	height: 88px;
+	margin: 12px;
+	margin-left: 5px;
+	background-image: url(img/img.jpg);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#wrapper > #mainBox > div > p {
+	color: rgba(0, 0, 0, 0);
+}
+
+#wrapper > #mainBox > div:hover  p {
+	color: rgba(238, 238, 238, 1);
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 8pt;
+}
+
+#aside {
+	float: right;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+ #aside > li {
+	width: 140px;
+	height: 50px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	margin: 2px;
+	border: 1px solid #777;
+	border-left-width: 5px;
+	background-color: #afa;
+	border-radius: 5px;
+	list-style: none;
+}
+
+#aside > li > a {
+	text-decoration: none;
+	color: #333;
+}
+
+#aside > li:hover {
+	background-color: #333;
+}
+
+#aside > li:hover > a {
+	text-decoration: underline;
+	color: #afa;
+}
+
+#footer {
+	margin-top: 20px;
+	padding: 7px;
+	border: 1px solid black;
+	border-radius: 6px;
+}

@@ -52,6 +52,10 @@ form > input.textbox {
 	background-repeat: no-repeat;
 }
 
+form > input.textbox:focus {
+	color: #FCA800;
+}
+
 form > textarea {
 	width: 300px;
 	font-size: 9pt;
@@ -98,6 +102,8 @@ form > div > p {
 	width: 95px;
 	height: 70px;
 	padding: 15px;
+	font-size: 13pt;
+	font-weight: bold;
 }
 
 form > div:hover > p {
@@ -106,5 +112,4 @@ form > div:hover > p {
 
 form > div > p:hover {
 	color: rgba(255, 255, 255, 1);
-	font-size: 10pt;
 }
