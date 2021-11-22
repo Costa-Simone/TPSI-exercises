@@ -1,0 +1,174 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: #eaeaea;;
+	background-image: url(img/bg.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+#wrapper {
+	width: 780px;
+	background-color: #eff;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#wrapper > #navbar > ul {
+	padding-top: 15px;
+	text-align: center;
+}
+
+#wrapper > #navbar > ul > li {
+	display: inline-block;
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	background-color: #eee;
+	border: 1px solid #bbb;
+	border-bottom-width: 3px;	
+}
+
+#wrapper > #navbar > ul > li:hover {
+	border-bottom-color: #4ce;
+	cursor: pointer;
+}
+
+#wrapper > #navbar > ul > li > a {
+	font-weight: bold;
+	color: #118;
+	text-decoration: none;
+}
+
+#wrapper > #navbar > ul > li:hover > a {
+	color: #4ce;	
+}
+
+#wrapper > #titolo {
+	width: 80%;
+	height: 250px;
+	margin: 25px auto;
+	background-image: url(img/1_langhe.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: left;
+}
+
+#wrapper > #titolo > h1 {
+	font-family: Arial;
+	font-size: 30pt;
+	font-weight: bold;
+	color: white;
+	margin-left: 110px;
+}
+
+#wrapper > #titolo > h2 {
+	font-size: 19pt;
+	font-weight: bold;
+	color: white;
+	margin-left: 110px;
+}
+
+#wrapper > #mainSection {
+	width: 460px;
+	height: 500px;
+	padding: 0 15px;
+	overflow: auto;
+}
+
+#wrapper > #mainSection > div {
+	background-image: url(img/2_bergolo.jpg);
+	margin: 10px;
+	float: right;
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 105px;
+}
+
+#wrapper > #mainSection > div > p {
+	color: rgba(0, 0, 0, 0);
+	text-align: center;
+	font-size: 10pt;
+	padding-top: 20px;
+	height: 85px;
+}
+
+#wrapper > #mainSection > div:hover > p {
+	color: rgba(224, 224, 224, 1);
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+#wrapper > #aside {
+	margin-right: 10px;
+	float: right;
+	padding-left: 20px;
+	width: 260px;
+	display: grid; 
+	grid-template-columns: 100px 160px;
+	grid-template-rows: 75px 75px 75px 75px 75px; 
+	grid-column-gap:4px;
+	grid-row-gap:3px;
+}
+
+#wrapper > #aside > div {
+	width: 100px;
+	height: 75px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#wrapper > #aside > div:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+#wrapper > #aside > div:nth-of-type(1) {
+	background-image: url(img/novello.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#wrapper > #aside > div:nth-of-type(2) {
+	background-image: url(img/pavese.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#wrapper > #aside > div:nth-of-type(3) {
+	background-image: url(img/paesaggio.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#wrapper > #aside > div:nth-of-type(4) {
+	background-image: url(img/gastronomia.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#wrapper > #aside > div:nth-of-type(5) {
+	background-image: url(img/fenoglio.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#wrapper > #aside > p {
+	font-family: Arial;
+	font-size: 11pt;
+}
+
+#wrapper > #aside > p:hover {
+	font-weight: bold;
+	color: #4ce;
+	cursor: pointer;
+}
