@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+
+   <head>
+   
+        <meta charset="UTF-8" />
+        <title> Ex38 </title>
+		
+		<link rel="stylesheet" href="index.css" />
+		
+   </head>
+   
+   <body>
+
+      <h1> Nuovi input tag HTML 5 </h1>
+      <!-- Action per richiamare pagina nel momento del submit -->
+      <form id="wrapper" action="pagina2.html">
+         <!-- Name per inviare il contenuto al server, l'ID per associare una label -->
+         <label for="txtUser"> Nome: </label>
+         <input type="text" name="txtUser" id="txtUser" pattern="[a-z]{1}[a-z_]{2,19}" title="Inserire una stringa lunga tra 3 e 20 che contiene solo lettere minuscole" />
+         <br/> <br>
+         <label for="txtEta"> Età: </label>
+         <input type="number" name="txtEta" id="txtEta" min="15" max="90" step="5" />
+         <br> <br>
+         <button> Invia </button>
+      </form>
+
+   </body>
+
+</html>
