@@ -21,3 +21,9 @@ h1 {
 	border-radius: 10px;
 	background-color: #ffa;
 }
+
+fieldset {
+	width: 80%;
+	padding: 15px;
+	border-radius: 10px;
+}
