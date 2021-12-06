@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+
+   <head>
+   
+        <meta charset="UTF-8" />
+        <title> Ex38 </title>
+		
+		<link rel="stylesheet" href="index.css" />
+		
+   </head>
+   
+   <body>
+
+      <h1> Nuovi input tag HTML 5 </h1>
+      <!-- Action per richiamare pagina nel momento del submit -->
+      <form id="wrapper" action="pagina2.html">
+         <!-- Name per inviare il contenuto al server, l'ID per associare una label -->
+         <label for="txtUser"> Nome: </label>
+         <input type="text" name="txtUser" id="txtUser" required pattern="[A-Z][a-zA-Z_]{7,11}" autocomplete="off" title="Inserire una stringa lunga tra 8 e 12 che contiene prima lettera maiuscola" />
+         <br/> <br>
+         <label for="txtEta"> Altezza: </label>
+         <input type="number" name="txtEta" id="txtEta" required min="1.50" max="2.00" step="0.01" autocomplete="off" />
+         <br> <br>
+         <fieldset>
+
+            <legend> Informazioni personali </legend>
+            
+            <label for="txtColor"> Colore preferito: </label>
+            <input type="color" name="txtColor" id="txtColor">
+            <br> <br>
+            <label for="txtNascita"> Data di nascita: </label>
+            <input type="date" name="txtNascita" id="txtNascita" min="2000-01-01" max="2010-12-31">
+            <br> <br>
+            <!-- Combo box -->
+            <label for="txtResidenza"> Residenza: </label>
+            <input type="text" name="txtResidenza" list="listaResidenza" id="txtResidenza">
+            <datalist id="listaResidenza"> 
+               <option> Fossano </option>
+               <option> Cuneo </option>
+               <option> Torino </option>
+            </datalist>
+         </fieldset>
+         <br>
+         <label for="txtConoscenze"> Conoscenze informatiche: </label>
+         <br>
+         <span> 1 </span>
+         <input type="range" name="txtConoscenze" id="txtConoscenze" min="1" max="10" step="1">
+         <span> 10 </span>
+         <br> <br>
+         <button> Invia </button>
+      </form>
+
+   </body>
+
+</html>

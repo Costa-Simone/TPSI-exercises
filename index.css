@@ -5,8 +5,8 @@
 	margin:0;
 }
 
-h1 {
-	text-align: center;
+html, body, #wrapper {
+	height: 100%;
 }
 
 
