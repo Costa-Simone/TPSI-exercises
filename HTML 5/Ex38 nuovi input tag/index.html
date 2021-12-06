@@ -1,57 +1,59 @@
-
-<!DOCTYPE html>        <!--  documento html 5  --> 
+<!DOCTYPE html>     <!--documento html5    -->
 <html lang="it">
+    <head>
+         <meta charset="UTF-8"/>
+	     <title>  Es_38 </title>
+		 <link rel="stylesheet" href="index.css"/>
+    </head>
+	<body>
+	      <h1 align="center"> Nuovi input tag HTML 5 </h1>
+		  <form id="wrapper" action="pagina2.html">
+			<!-- NAME serve per inviare il contenuto del controllo al server-->
+			<!-- ID serve per associare una label-->
+			<label for="txtUser"> Nome: </label>
+			<input type="text" name="txtUser" id="txtUser" required minlength="8" />
+			<br/><br/>
+			<label for="txtCodice"> Codice fiscale: </label>
+         	<input type="text" name="txtCodice" id="txtCodice" required pattern="^[A-Z] {6} [0-9] {2} [A-Z] [0-9] {3} {6,11}$" autocomplete="off" title="Formato valido:CCCCCCNNCNNNC" />
+         	<br/> <br>
+			<label for="txtMediaVoti"> Media voti: </label>
+			<input type="number" name="txtMediaVoti" id="txtMediaVoti" required min="6.00" max="10.00" step="0.01"/>
+			<br/><br/>
 
-   <head>
-   
-        <meta charset="UTF-8" />
-        <title> Ex38 </title>
-		
-		<link rel="stylesheet" href="index.css" />
-		
-   </head>
-   
-   <body>
+			<fieldset> 
+				<legend> Informazioni personali: </legend>
+				<label for="txtColor"> Colore preferito: </label>
+				<input type="color" name="txtColor" id="txtColor"/>
+				<br/><br/>
 
-      <h1> Nuovi input tag HTML 5 </h1>
-      <!-- Action per richiamare pagina nel momento del submit -->
-      <form id="wrapper" action="pagina2.html">
-         <!-- Name per inviare il contenuto al server, l'ID per associare una label -->
-         <label for="txtUser"> Nome: </label>
-         <input type="text" name="txtUser" id="txtUser" required pattern="[A-Z][a-zA-Z_]{7,11}" autocomplete="off" title="Inserire una stringa lunga tra 8 e 12 che contiene prima lettera maiuscola" />
-         <br/> <br>
-         <label for="txtEta"> Altezza: </label>
-         <input type="number" name="txtEta" id="txtEta" required min="1.50" max="2.00" step="0.01" autocomplete="off" />
-         <br> <br>
-         <fieldset>
+				<label for="txtNascita"> Data di nascita: </label>
+				<input type="date" name="txtNascita" id="txtNascita" min="2000-01-01" max="2010-12-31"/>
+				<br/><br/>
+				
+				<!-- COMBO BOX -->
+				<label for="txtResidenza"> Residenza: </label>
+				<input type="text" name="txtResidenza" id="txtResidenza" list="listaResidenza" required/>
+				<datalist id="listaResidenza"> 
+					<option> Fossano </option>
+					<option> Cuneo </option>
+					<option> Torino </option>
+				</datalist>
+				<br/><br/>
 
-            <legend> Informazioni personali </legend>
-            
-            <label for="txtColor"> Colore preferito: </label>
-            <input type="color" name="txtColor" id="txtColor">
-            <br> <br>
-            <label for="txtNascita"> Data di nascita: </label>
-            <input type="date" name="txtNascita" id="txtNascita" min="2000-01-01" max="2010-12-31">
-            <br> <br>
-            <!-- Combo box -->
-            <label for="txtResidenza"> Residenza: </label>
-            <input type="text" name="txtResidenza" list="listaResidenza" id="txtResidenza">
-            <datalist id="listaResidenza"> 
-               <option> Fossano </option>
-               <option> Cuneo </option>
-               <option> Torino </option>
-            </datalist>
-         </fieldset>
-         <br>
-         <label for="txtConoscenze"> Conoscenze informatiche: </label>
-         <br>
-         <span> 1 </span>
-         <input type="range" name="txtConoscenze" id="txtConoscenze" min="1" max="10" step="1">
-         <span> 10 </span>
-         <br> <br>
-         <button> Invia </button>
-      </form>
-
-   </body>
-
+				<label for="txtMail"> Mail: </label>
+				<input type="mail" name="txtMail" id="txtMail" required />
+				<br/><br/>
+			</fieldset>
+			<br/><br/>
+			
+			<label for="txtConoscenze"> Conoscenze informatiche: </label>
+			<br/>
+			<span> 1 </span>
+			<input type="range" name="txtConoscenze" id="txtConoscenze" min="1" max="10" step="1"/>
+			<span> 10 </span>
+			<br/><br/>
+			
+			<input type="submit" value="invia"/>
+		  </form>
+	</body>
 </html>
