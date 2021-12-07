@@ -1,0 +1,36 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+html, body, #wrapper {
+	height: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+div {
+	font-size: 14pt;
+	padding: 20px;
+	margin: 20px;
+}
+
+div:nth-of-type(2) {
+	width: 800px;
+	margin: 20px auto;
+}
+
+div:nth-of-type(3) {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+div:nth-of-type(4) {
+	max-width: 800px;
+	margin: 20px auto;
+}
