@@ -16,13 +16,14 @@ body{
     background-color: rgb(234,234,234);
 }
 #wrapper{
-    width: 772px;
+    max-width: 772px;
     padding:1px 4px;
     margin:0 auto;
 }
 
 /**************************************************************/
 #topFrame{
+    background-size: contain;
     height:275px;
     background-image: url(img/front.jpg);
     background-repeat: no-repeat;
@@ -48,7 +49,7 @@ body{
 
 /**************************************************************/
 #leftFrame{
-    width:143px;
+    max-width:143px;
     float:left;
 	padding-left:7px;
 }
@@ -130,7 +131,7 @@ li:hover{
 #mainFrame{
     margin: 10px 10px 10px 160px;
     line-height:19px;
-	width:476px;
+	max-width:476px;
 }
 #mainFrame h1{
     margin:0 0 10px 10px;
@@ -147,7 +148,7 @@ li:hover{
 
 /**************************************************************/
 #rightFrame{
-    width:130px;
+    max-width:130px;
 	padding-right:6px;
     float:right;
 	font-size:8pt;
@@ -192,4 +193,33 @@ li:hover{
     height:2px;
     color:#dadada;
 	margin-bottom:5px;
+}
+
+/**************************************************************/
+/* Media query */
+
+@media screen and (max-device-width:700px) { 
+    #leftFrame {
+        display: block;
+    }
+
+    #rightFrame {
+        display: none;
+    }
+
+    #mainFrame {
+        margin-left: 10px;
+        max-width: none;
+        width: auto;
+        background-color: #ffe;
+    }
+
+    #topFrame {
+        height: 0;
+        padding-bottom: 35%;
+    }
+
+    #leftFrame .menu2, #leftFrame .latestNews {
+        display: none;
+    }
 }
