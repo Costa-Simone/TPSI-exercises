@@ -1,0 +1,52 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #eaeaea;;
+	background-image: url(img/bg.gif);
+	background-repeat: repeat-y;
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#wrapped {
+	margin: 10px auto;
+	background-color: burlywood;
+	max-width: 700px;
+	border-radius: 10px;
+	padding: 30px;
+	position: relative;
+	box-shadow: 6px 3px #AAA;
+}
+
+#wrapped h1 {
+	text-align: center;
+}
+
+#wrapped fieldset {
+	margin: 10px auto;
+	width: 80%;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#wrapped hr {
+	margin: 15px auto;
+}
+
+#wrapped button {
+	position: absolute;
+	bottom: 15px;
+	right: 25px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #eaeaea;
+}

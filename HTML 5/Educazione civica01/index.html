@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+
+   <head>
+   
+        <meta charset="UTF-8" />
+        <title> Questionario </title>
+		
+		<link rel="stylesheet" href="index.css" />
+		
+   </head>
+   
+   <body>
+      <div id="wrapped">
+         <h1> Questionario sui social network </h1>
+
+         <hr>
+
+         <form action="pagina2.html">
+            <fieldset>
+               <legend> Raccolta dati anonima: </legend>
+
+               <label for="rdSesso"> Sesso: </label>
+               <input type="radio" name="rdSesso" id="rdSesso" required> Uomo
+               <input type="radio" name="rdSesso" id="rdSesso" required> Donna
+               <br> <br>
+               <label for="txtEta"> Etá: </label>
+               <input type="number" name="txtEta" id="txtEta" required min="18" max="100" step="1" required />
+               <br> <br>
+               <label for="txtResidenza"> Regione di provenienza </label>
+               <select id="lstProvincia" name="lstProvincia" required >
+                  <option> Valle d'Aosta </option>
+                  <option> Piemonte </option>
+                  <option> Liguria </option>
+                  <option> Lombardia </option>
+                  <option> Trentino  </option>
+                  <option> Veneto  </option>
+                  <option> Friuli-Venezia Giulia  </option>
+                  <option> Emilia Romagna </option>
+                  <option> Toscana </option>
+                  <option> Umbria </option>
+                  <option> Marche </option>
+                  <option> Lazio </option>
+                  <option> Abruzzo </option>
+                  <option> Molise </option>
+                  <option> Campania </option>
+                  <option> Puglia </option>
+                  <option> Basilicata </option>
+                  <option> Calabria </option>
+                  <option> Sicilia </option>
+                  <option> Sardegna </option>
+               </select>
+            </fieldset>
+            <hr>
+            <label for="txtDispositivo"> Quale dispositivo utilizzi quotidianamente per navigare Online: </label>
+            <br>
+            <input type="checkbox" name="txtDispositivo" id="txtDispositivo" > Computer &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="txtDispositivo" id="txtDispositivo" > Smartphone &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="txtDispositivo" id="txtDispositivo" > Tablet
+            <hr>
+            <label for="txtRicerche"> Che cosa visiti quanto navighi online: </label>
+            <br>
+            <input type="checkbox" name="txtRicerche" id="txtRicerche"> Motori di ricerca &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="txtRicerche" id="txtRicerche"> Social Network &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="txtRicerche" id="txtRicerche"> Video &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="txtRicerche" id="txtRicerche"> Messaggistica / chat &nbsp;&nbsp;&nbsp;
+            <hr>
+            <label for="txtOre"> Quante ore trascorri in media i Social Network al giorno: </label>
+            <br/>
+            <span> 0 </span>
+            <input type="range" name="txtConoscenze" id="txtConoscenze" min="0" max="24" step="1"/>
+            <span> 24 </span>
+            <hr>
+            <label for="txtSocial"> Quali Social Network utilizzi: </label>
+            <br>
+            <input type="checkbox" name="txtSocial" id="txtSocial"> Facebook &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="txtSocial" id="txtSocial"> Instagram &nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="txtSocial" id="txtSocial"> Altri &nbsp;&nbsp;&nbsp;
+            <hr>
+            <label for="lstMinorenni"> Se sei genitore, in che etá hanno cominciato ad utilizzare Internet i tuoi figli: </label>
+            <select id="lstMinorenni" name="lstMinorenni" required >
+               <option> Non utilizza ancora Internet </option>
+               <option> Tra i 2 e i 10 </option>
+               <option> Tra i 10 e i 17 </option>
+            </select>
+            <hr>
+            <label for="txtFenomeni"> Hai mai subito uno di questi fenomeni: </label>
+            <br>
+            <input type="checkbox" name="txtFenomeni" id="txtFenomeni"> Furto di identitá <br>
+            <input type="checkbox" name="txtFenomeni" id="txtFenomeni"> Diffusione illecita di immagini <br>
+            <input type="checkbox" name="txtFenomeni" id="txtFenomeni"> Pedopornografia, sextorting, secting e grooming <br>
+            <input type="checkbox" name="txtFenomeni" id="txtFenomeni"> Cyberbullismo <br>
+            <input type="checkbox" name="txtFenomeni" id="txtFenomeni"> Hate speech - incitamento all'odio
+            <hr>
+            <label for="txtAzioni"> Quali di queste azioni utilizzi per difendere i minori: </label>
+            <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Utilizzi “Filtri” di protezione per navigare online <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Non pubblichi foto altrui senza il consenso esplicito della persona <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Non pubblichi foto di minori <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Non pubblichi date personali, numeri di telefono e indirizzi <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Imposti la privacy nei social network in modalità “restrittiva” <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Poni attenzione alle rete wi-fi pubbliche <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Non salvi mai gli accessi da device condivisi <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Non utilizzi internet come un baby sitter e affianchi i più giovani all’utilizzo di internet <br>
+            <input type="checkbox" name="txtAzioni" id="txtAzioni"> Poni attenzione a cosa condividete voi stessi <br>
+            <hr>
+            <br>
+            <button> Termina </button>
+         </form>
+
+      </div>
+
+   </body>
+
+</html>
