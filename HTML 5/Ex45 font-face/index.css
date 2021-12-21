@@ -1,0 +1,57 @@
+*{
+	padding:0;
+	margin:0;	
+}
+
+h1{
+	text-align:center;
+	margin:30px;
+}
+
+html, body, #wrapper{
+	height:100%
+}
+
+@font-face {
+	font-family: _Sansation;   /* nome da assegnare al font */
+	src: local(Sansation),    /* nome del font eventualmente gi� installato sulla macchina */
+		 url(font/Sansation_Regular.ttf)  format('truetype'),
+		 url(font/Sansation_Regular.svg)  format('svg'),
+	 	 url(font/Sansation_Regular.woff) format('woff'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+div {
+	margin: 15px auto;
+	font-size: 14pt;
+	max-width: 900px;
+}
+
+div:nth-of-type(1) {
+	font-family: sans-serif;
+}
+
+div:nth-of-type(2) {
+	font-family: _Sansation, sans-serif;
+}
+
+div:nth-of-type(3) {
+	font-family: _Sansation, sans-serif;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: _SansationBold;   /* nome da assegnare al font */
+	src: local(Sansation),    /* nome del font eventualmente gi� installato sulla macchina */
+		 url(font/Sansation_Bold.ttf)  format('truetype'),
+		 url(font/Sansation_Bold.svg)  format('svg'),
+	 	 url(font/Sansation_Bold.woff) format('woff'); 
+	font-weight: bold;
+	font-style: normal;
+}
+
+div:nth-of-type(4) {
+	font-family: _SansationBold, sans-serif;
+	font-weight: bold;
+}

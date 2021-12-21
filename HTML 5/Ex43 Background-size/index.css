@@ -1,0 +1,50 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+html, body, #wrapper {
+	height: 100%;
+}
+
+h1 {
+	text-align: center;
+	margin: 30px;
+}
+
+div, img {
+	padding: 15px 20px;
+	margin: 25px;
+	border: 1px solid black;
+	background-color: #ccc;
+}
+
+img {
+	width: 360px;
+}
+
+div {
+	background-image: url(img/Tulips.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 360px;
+	height: 160px;
+}
+
+div:nth-of-type(2) {
+	background-size: contain;
+}
+
+div:nth-of-type(3) {
+	background-size: cover;
+}
+
+div:nth-of-type(4) {
+	background-size: 80%;
+}
+
+div:nth-of-type(5) {
+	box-sizing: border-box;
+}

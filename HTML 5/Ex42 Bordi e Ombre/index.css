@@ -1,0 +1,86 @@
+*{
+	padding:0;
+	margin:0;	
+}
+
+h1{
+	text-align:center;
+	margin:30px;
+}
+
+html, body, #wrapper{
+	height:100%
+}
+
+#wrapper1, #wrapper2, button{
+	padding:10px;
+	margin:10px;
+}
+#wrapper1 div, #wrapper2 div{
+    width: 160px;
+	height: 60px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+
+/* ************************ border-radius ************************** */
+#wrapper1 div:nth-of-type(1){
+    border-radius: 15px;
+}
+#wrapper1 div:nth-of-type(2){
+    /* 1° = curvatura asse orizzontale  */
+    /* 2° = curvatura asse verticale    */
+    border-radius: 10px/30px;
+}
+#wrapper1 div:nth-of-type(3){
+	width:100px;
+    height:100px;
+    border-radius: 50px; /* non è un cerchio perchè c'è anche padding */	
+    border-radius: 50%;
+}
+
+
+/* ***************************** ombre ***************************** */
+
+#wrapper2 div:nth-of-type(1){
+    /* La luce arriva SEMPRE dallo spigolo in alto a sinistra 
+       1° = ombra verso destra
+       2° = ombra verso basso
+       3° = colore ombra    */
+    box-shadow: 6px 3px #AAA;
+}
+#wrapper2 div:nth-of-type(2){
+    box-shadow: -6px 3px #AAA;
+}
+#wrapper2 div:nth-of-type(3){
+    /* oggetto incassato  */
+    box-shadow: inset 6px 3px #AAA;
+}
+#wrapper2 div:nth-of-type(4){
+    /* 3° parametro = raggio di sfumatura 
+       0 = senza sfumatura      */
+    box-shadow: 6px 3px 4px #AAA;
+}
+#wrapper2 div:nth-of-type(5){
+    box-shadow: 4px 2px 2px #0F0,
+                8px 4px 6px #FFF,
+               12px 6px 6px #F00;
+}
+#wrapper2 div:nth-of-type(6){
+    font-size: 20pt;
+    font-weight: bold;
+	text-align:center;
+	line-height:60px;
+    text-shadow: 2px 2px 3px #666;
+}
+
+
+/* ********************** Pulsante a incasso ******************* */
+button{   
+    box-shadow: 4px 3px 2px #999;
+}
+button:active{   /* solo chrome */
+    box-shadow: inset 4px 3px 2px #AAA;
+}
