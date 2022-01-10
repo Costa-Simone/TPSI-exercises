@@ -6,7 +6,6 @@
 }
 
 html, body, #wrapper {
-	height: 100%;
 	font-family: calibri;
 }
 
@@ -53,6 +52,16 @@ html, body, #wrapper {
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+@media screen and (max-device-width:550px) {
+	* #menu > img {
+		display: none;
+	}
+
+	* #menu > p {
+		display: none;
+	}
 }
 
 /* Chi sono */
@@ -139,7 +148,7 @@ div {
 iframe {
 	width: 80%;
 	margin-left: 10%;
-	height: 700px;
+	height: 1000px;
 	border: 2px solid #999;
 	margin-bottom: 50px;
 	border-radius: 10px;
@@ -155,7 +164,6 @@ iframe {
 	background-color: white;
 	text-align: center;
 	width: 92%;
-	height: 61px;
 }
 
 #chiSono > #lista > li {
@@ -273,7 +281,26 @@ iframe {
 	}
 
 	#motori > div:nth-of-type(2) > p {
-		padding-top: 30px;
+		padding-top: 10px;
+	}
+}
+
+@media screen and (max-device-width:700px) {
+	#motori > div > img {
+		width: 150px;
+	}
+
+	#motori > div:nth-of-type(3) > img:nth-of-type(1) {
+		float: none;
+	}
+
+	#motori > div:nth-of-type(3) > img:nth-of-type(2) {
+		float: none;
+		padding: 10px;
+	}
+
+	#motori > div:nth-of-type(3) > p {
+		padding: 10px;
 	}
 }
 
@@ -303,6 +330,16 @@ iframe {
 	width: 300px;
 }
 
+#calcio > div:nth-of-type(1) > img:nth-of-type(3) {
+	display: none;
+	padding: 15px;
+}
+
+#calcio > div:nth-of-type(1) > img:nth-of-type(4) {
+	display: none;
+	padding: 15px 15px 45px 15px;
+}
+
 #calcio > div:nth-of-type(2) {
 	margin: 20px;
 	background-color: #b2ffff;
@@ -318,6 +355,47 @@ iframe {
 #calcio > div:nth-of-type(2) > img:nth-of-type(2) {
 	width: 500px;
 	padding: 20px;
+}
+
+@media screen and (max-device-width:1100px) {
+	#calcio > div:nth-of-type(1) > img:nth-of-type(3) {
+		display: inline-block;
+	}
+	
+	#calcio > div:nth-of-type(1) > img:nth-of-type(4) {
+		display: inline-block;
+	}
+
+	#calcio > div:nth-of-type(1) > img:nth-of-type(1) {
+		display: none;
+	}
+	
+	#calcio > div:nth-of-type(1) > img:nth-of-type(2) {
+		display: none;
+	}
+}
+
+@media screen and (max-device-width:750px) {
+	#calcio > div:nth-of-type(1) > img:nth-of-type(4) {
+		width: 200px;
+		padding: 10px;
+	}
+
+	#calcio > div:nth-of-type(1) > img:nth-of-type(3) {
+		width: 200px;
+		padding: 10px;
+	}
+
+	#calcio > div:nth-of-type(2) > img:nth-of-type(1) {
+		float: none;
+		padding: 10px;
+		width: 200px;
+	}
+	
+	#calcio > div:nth-of-type(2) > img:nth-of-type(2) {
+		width: 200px;
+		padding: 10px;
+	}
 }
 
 /* Viaggi */
@@ -424,6 +502,24 @@ iframe {
 	}
 }
 
+@media screen and (max-device-width:750px) {
+	#viaggi > div:nth-of-type(2) > img:nth-of-type(3) {
+		width: 200px;
+	}
+
+	#viaggi > div:nth-of-type(2) > img:nth-of-type(4) {
+		width: 200px;
+	}
+
+	#viaggi > div:nth-of-type(3) > img:nth-of-type(3) {
+		width: 200px;
+	}
+
+	#viaggi > div:nth-of-type(3) > img:nth-of-type(4) {
+		width: 200px;
+	}
+}
+
 /* Video Giochi */
 
 #videoGiochi {
@@ -445,6 +541,14 @@ iframe {
 #videoGiochi > div:nth-of-type(1) > img:nth-of-type(2) {
 	float: right;
 	padding: 15px;
+}
+
+#videoGiochi > div:nth-of-type(1) > img:nth-of-type(3) {
+	display: none;
+}
+
+#videoGiochi > div:nth-of-type(1) > img:nth-of-type(4) {
+	display: none;
 }
 
 #videoGiochi > div:nth-of-type(1) > p {
@@ -502,6 +606,43 @@ iframe {
 	}
 }
 
+@media screen and (max-device-width:750px) {
+	#videoGiochi > div:nth-of-type(1) > img:nth-of-type(2) {
+		display: none;
+	}
+
+	#videoGiochi > div:nth-of-type(1) > img:nth-of-type(1) {
+		display: none;
+	}
+
+	#videoGiochi > div:nth-of-type(1) > img:nth-of-type(3) {
+		display: inline-block;
+	}
+
+	#videoGiochi > div:nth-of-type(1) > img:nth-of-type(4) {
+		display: inline-block;
+	}
+
+	#videoGiochi > div:nth-of-type(1) > p {
+		padding: 10px;
+	}
+
+	#videoGiochi > div:nth-of-type(3) > img:nth-of-type(1) {
+		width: 200px;
+		padding: 10px;
+	}
+
+	#videoGiochi > div:nth-of-type(3) > img:nth-of-type(2) {
+		width: 200px;
+		padding: 10px;
+	}
+
+	#videoGiochi > div:nth-of-type(2) > img:nth-of-type(2)  {
+		width: 200px;
+		padding: 10px
+	}
+}
+
 /* Formazione */
 
 #formazione {
@@ -535,6 +676,20 @@ iframe {
 	float: right;
 	padding: 30px;
 	width: 400px;
+}
+
+@media screen and (max-device-width:750px) {
+	#formazione > #wrapper > div:nth-of-type(1) > img:nth-of-type(1) {
+		float: none;
+		padding: 10px;
+		width: 200px;
+	}
+
+	#formazione > #wrapper > div:nth-of-type(2) > img:nth-of-type(1) {
+		float: none;
+		padding: 10px;
+		width: 200px;
+	}
 }
 
 #formazione > #wrapper > div:nth-of-type(2) > p:nth-of-type(1) {
@@ -653,4 +808,18 @@ iframe {
 	border: 1px solid #999;
 	background-color: white;
 	border-radius: 10px;
+}
+
+@media screen and (max-device-width:750px) {
+	#Contatti > #wrapper > div > form > #txtNome {
+		width: 250px;
+	}
+
+	#Contatti > #wrapper > div > form > #txtMail {
+		width: 250px;
+	}
+
+	#Contatti > #wrapper > div > form > #txtCommenti {
+		width: 250px;
+	}
 }
