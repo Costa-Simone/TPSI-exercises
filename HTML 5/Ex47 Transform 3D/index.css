@@ -1,0 +1,34 @@
+
+
+div.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #555;
+    margin: 50px;
+}
+
+div.box div{
+	/* Il valore di default di height è auto, cioè pari all'altezza del contenuto*/ 
+	height: inherit;
+    color: #FFF;	
+    background-color: #F00;
+}
+
+
+/* ******************************************* */
+
+div.box {
+	perspective: 400px; /* la perspective deve essere almeno 3/4 volte più grande rispetto alle dimensioni dell'oggetto */
+}
+
+div.box:nth-of-type(1) > div {
+	transform: rotateY(45deg);
+}
+
+div.box:nth-of-type(2) > div {
+	transform: rotateY(15deg) translateZ(250px);
+}
+ 
+
+
+

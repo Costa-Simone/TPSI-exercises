@@ -1,0 +1,71 @@
+
+input[name=opt1]{
+	display:none;
+}
+input[name=opt2]{
+	display:inline;
+}
+
+
+/* 
+  Anche se display:none, i radio opt1 vengono comunqne conteggiati nel rendering.
+  Anche scrivendo input[name=opt2]:nth-of-type(1), nth-of-type viene comunque
+       applicato alla sequenza completa di tutti i tag input          
+*/
+
+input:nth-of-type(8):checked ~ .scene .cube {
+    animation: animazione1 5s linear infinite;  
+} 
+input:nth-of-type(9):checked ~ .scene .cube {
+   animation: animazione2 5s linear infinite;
+} 
+input:nth-of-type(10):checked ~ .scene .cube {
+   animation: animazione3 10s linear infinite;
+}
+input:nth-of-type(11):checked ~ .scene .cube {
+   animation: animazione4 10s linear infinite;
+}
+
+
+ 
+/* animazione 1. rotazione intorno asse Y  */ 
+@keyframes animazione1 {
+	0% { transform:rotateY(0deg); 	}
+	50%{ transform:rotateY(180deg);	}
+   100%{ transform:rotateY(360deg); }
+}
+
+
+/* animazione 2. rotazione intorno asse X  */
+@keyframes animazione2 {
+	0% { transform:rotateX(0deg); 	}
+	50%{ transform:rotateX(180deg); }
+   100%{ transform:rotateX(360deg); }
+}
+
+
+/* animazione 3. rotazione intorno asse Y e dopo asse X  */
+@keyframes animazione3 {
+	0% { transform:rotateX(0deg) rotateY(0deg);   }
+	25%{ transform:rotateX(0deg) rotateY(180deg); }
+    50%{ transform:rotateX(0deg) rotateY(360deg); }
+	75%{ transform:rotateX(180deg) rotateY(360deg); }
+   100%{ transform:rotateX(360deg) rotateY(360deg); }
+}
+
+
+/* animazione 4. rotazioni inclianate di 30° a velocità costante */
+/* rotazione complessiva = 150+180+150+180+30 = 690° */
+	/* 150°/690 = 22% */
+	/* 180°/690 = 26% */
+	/* 150°/690 = 22% */
+	/* 180°/690 = 26% */
+	/*  30°/690 =  4% */
+@keyframes animazione4 {
+	0% { transform:rotateX(30deg) rotateY(30deg);  }
+	22%{ transform:rotateX(30deg) rotateY(180deg); }
+    48%{ transform:rotateX(30deg) rotateY(360deg); }
+	70%{ transform:rotateX(180deg) rotateY(390deg); }
+    96%{ transform:rotateX(360deg) rotateY(390deg); }
+   100%{ transform:rotateX(390deg) rotateY(390deg); }
+}

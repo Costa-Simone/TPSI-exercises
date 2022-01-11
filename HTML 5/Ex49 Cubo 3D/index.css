@@ -1,0 +1,99 @@
+
+.scene {
+  margin:80px 120px;
+  width: 150px;
+  height: 150px;  
+  perspective: 600px; 
+}
+
+.cube {
+  position: relative;
+  width: 150px;
+  height: 150px; 
+  /* estende la prospettiva 3D anche ai figli */
+  transform-style: preserve-3d;
+}
+
+
+
+
+/* Facce interne del cubo */
+.cube div {   
+  width: inherit;  /* il default è auto */	
+  height: inherit;
+  border: 1px solid #444;   
+  position: absolute;   /* al momento tutti i figli saranno in posizione 0,0 */
+  opacity: 0.90;        /* così intravedo le facce sottostanti */
+}
+
+
+.cube .front {
+  background-color:red;  
+  /* 75px (width/2) in avvicinamento verso l'utente su asse z */
+  transform: translate3d(0, 0, 75px);
+}
+/* il div.back viene ruotato 180° in modo che l'asse Z si rivolga verso l'interno
+    del PC. Poi anche lui viene traslato di +75px (verso l'interno del PC) */
+.cube .back {
+  background-color: blue;
+  transform: rotateY(180deg) translate3d(0, 0, 75px);
+} 
+
+
+
+/* il div.left esegue una rotazione clockwise di 90° 
+   L'asse z (che ruota insieme all'elemento) è ora completamente rivolto 
+   verso sinistra. Per cui trasliamo l'elemento di 75px verso sinistra */
+.cube .left {
+  background-color: green;
+  transform: rotateY(-90deg) translate3d(0, 0, 75px);
+} 
+.cube .right {
+  background-color: magenta;
+  transform: rotateY(90deg) translate3d(0, 0, 75px);
+} 
+
+
+
+/* i div .top e .bottom eseguono un rotatex di 90° 
+   e poi vengono entrambi allrgati di 75px      */
+.cube .top {
+  background-color: cyan;
+  transform: rotateX(90deg) translate3d(0, 0, 75px);
+} 
+.cube .bottom {
+  background-color: yellow;
+  transform: rotateX(-90deg) translate3d(0, 0, 75px);
+}
+
+
+
+
+/* ************************************************************************* */
+
+input[name=opt2]{
+	display:none;
+}
+
+
+/* ~ indica un GENERICO fratello successivo   */
+
+input:nth-of-type(2):checked ~ .scene .cube {
+  transform: rotateY(30deg);
+} 
+input:nth-of-type(3):checked ~ .scene .cube {
+  transform: rotateY(60deg);
+} 
+input:nth-of-type(4):checked ~ .scene .cube {
+  transform: rotateY(120deg);
+}
+input:nth-of-type(5):checked ~ .scene .cube {
+  transform: rotateX(30deg);
+}  
+input:nth-of-type(6):checked ~ .scene .cube {
+  transform: rotateX(60deg);
+}
+input:nth-of-type(7):checked ~ .scene .cube {
+  transform: rotateX(120deg);
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preserve 3D</title>
+	<style>
+
+	#div1 {
+		position: relative;
+		height: 140px; /* 140 +2padding = 200 */
+		width: 140px;  /* 140 +2padding = 200 */
+		padding:30px;
+		margin: 50px 150px;
+		border: 1px solid black;
+		perspective: 300px;
+	}
+
+	#div2 { 
+		width:50px;    /* 50 +2padding = 150 */
+		height:20px;   /* 20 +2padding = 120 */
+		padding:50px;
+		position: absolute;   /* 0, 0 ma dentro il padding */
+		background-color: red;
+		transform: rotateY(0deg);
+		transform-style: flat; /* default */
+	}
+
+	#div3 {
+		width:70px;    /* 70 +2padding = 150 */
+		height:20px;   /* 20 +2padding = 100 */
+		padding:40px;  
+		position: absolute; /* 0, 0 ma dentro il padding */
+		background-color: yellow;
+		transform: rotateY(40deg);  
+	}
+	</style>
+
+<script>
+
+function changeRot(value) {
+  document.getElementById('div2').style.transform = "rotateY(" + value + "deg)";
+}
+
+function checkFlat() {
+  if (document.getElementById("chk").checked == true)  
+	document.getElementById('div2').style.transformStyle = "preserve-3d";
+  else 
+	document.getElementById('div2').style.transformStyle = "flat";
+}
+</script>
+</head>
+
+
+<body>
+	<h1> La Proprietà Preserve 3D </h1>
+
+	<p>Rotate the div elements, with and without checking the checkbox:</p>
+	<div id="div1">
+	  <div id="div2"> 
+		<div id="div3"> </div>
+	  </div>
+	</div>
+
+	preserve-3d : <input type="checkbox" onchange="checkFlat()" id="chk" 
+						 autocomplete="off"> on/off <br><br>
+	DIV2 - rotateY: &nbsp; <input type="number" min="-360" max="360" value="0"
+				   autocomplete="off" onchange="changeRot(this.value)"/>
+</body>
+</html>
