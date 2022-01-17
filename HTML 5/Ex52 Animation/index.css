@@ -1,0 +1,109 @@
+
+*{
+	padding:0;
+	margin:0;	
+}
+
+h1{
+	text-align:center;
+	margin:30px;
+}
+
+/* ******************** pendolo soluzione 1 **************** */
+
+body > div:nth-of-type(1) {
+	width: 20px;
+	height: 150px;
+	margin: 0 auto;
+	background-color: #bbb;
+	transform-origin: center top;
+	animation: animazione1 2s linear infinite;
+}
+
+@keyframes animazione1 {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(20deg); }
+	50% { transform: rotate(0deg); }
+	75% { transform: rotate(-20deg); }
+	100% { transform: rotate(0deg); }
+}
+
+/* ******************* pendolo soluzione 2 **************** */
+
+body > div:nth-of-type(2) {
+	width: 20px;
+	height: 300px;
+	margin: 0 auto;
+	background-color: transparent;
+	transform-origin: center top;
+	animation: animazione1 2s linear infinite;
+	margin-top: -100px;
+}
+
+body > div:nth-of-type(2) > div {
+	height: 150px;
+	width: 20px;
+	background-color: #bbb;
+	position: relative;
+	top: 150px;
+}
+
+/* ******************* barra avanzamento **************** */
+
+body > div:nth-of-type(3) {
+	width: 300px;
+	height: 15px;
+	margin: 15px auto;
+	border: 1px solid #ddd;
+	background-color: transparent;
+}
+
+body > div:nth-of-type(3) > div {
+	height: 15px;
+	width: 0;
+	background-color: #0f0;
+	animation: animazione2 2s linear infinite;
+}
+
+@keyframes animazione2 {
+	0% { width: 0; }
+	100% { width: 300px; }
+}
+
+/* ******************* palla che rimbalza **************** */
+
+body > div:nth-of-type(4) {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-left: 200px;
+	background-color: #f00;
+	animation: animazione3 3s infinite;
+	position: relative;
+}
+
+@keyframes animazione3 {
+	0% { 
+		top: 0px; 
+		background-color: red;
+		animation-timing-function: ease-in;
+	}
+
+	50% {
+		top: 300px;
+		background-color: #600;
+		animation-timing-function: ease-out;
+	}
+
+	100% {
+		top: 0px; 
+		background-color: red;
+		animation-timing-function: ease-in;
+	}
+}
+
+body > div:nth-of-type(5) {  /* prato */
+    height:10px;
+	background-color:#090;
+	transform:translateY(300px)
+}

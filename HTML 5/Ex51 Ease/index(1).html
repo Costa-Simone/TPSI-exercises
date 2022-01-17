@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>EASE</title>
+	
+    <style>   	
+
+	    #container {
+			border:1px solid #ccc;
+		}	
+
+		#container div { 
+			width: 5em;  /* 5 volte il font size, cioè 12pt*4/3 * 5 = 80px */
+			height: 3em; /* 3 volte il font size, cioè 12pt*4/3 * 3 = 48px */
+			line-height: 3em;  		
+			transition-property: width;        
+			transition-duration: 4s;
+		}  
+
+		#container:hover div {
+			width: 50em;
+		}
+    
+		#container div:nth-of-type(1) { 
+			background-color:#ff5c00; 
+			transition-timing-function: ease;
+		}     
+
+		#container div:nth-of-type(2) { 
+			background-color: #ff7222; 
+			transition-timing-function: linear; 
+		}
+
+		#container div:nth-of-type(3) { 
+			background-color: #ff8744; 
+			transition-timing-function: ease-in;
+		}
+
+		#container div:nth-of-type(4) { 
+			background-color: #ff9d66; 
+			transition-timing-function: ease-out;
+		}
+
+		#container div:nth-of-type(5) { 
+			background-color: #ffb388; 
+			transition-timing-function: ease-in-out;
+		}	
+
+    </style>  
+  </head>
+
+	<body>
+  		<h1>EASE</h1>
+  		<div id="container">
+   			 <div>Ease</div>
+   			 <div>Linear</div>
+   			 <div>Ease-In</div>
+    		<div>Ease-Out</div>
+    		<div>Ease-In-Out</div>
+  		</div>
+
+	</body>
+
+</html>

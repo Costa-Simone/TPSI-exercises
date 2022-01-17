@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">    
+    <title> We5! Il blog della guida HTML5 </title>
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="index.css" >
+</head>
+
+
+<body>
+
+ <header>
+      <div id="hgroup">
+          <h1>We5! Il blog della guida HTML5</h1>
+          <h2>Approfittiamo fin da oggi dei vantaggi delle specifiche HTML5!</h2>
+      </div>
+      <nav>
+          <h1>Navigazione:</h1>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Gli autori</a></li>
+              <li><a href="#">Il progetto four2five</a></li>
+              <li><a href="#">Archivio</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <!-- *************** section ULTIMO POST  **************** -->
+  <section>
+      <h1>L'ultimo post</h1>
+      <article>
+          <header>
+              <p><time datetime="2010-11-22">Luned&igrave; 22 Novembre</time></p>
+              <h1>Nuove scoperte sul tag video!</h1>
+          </header>
+          <p>
+            Attraverso un utilizzo sapiente del tag canvas &egrave; possibile leggere uno stream
+            di dati proveniente da un tag video e manipolarlo in tempo reale.
+          </p>
+          <footer>
+              <dl>
+                  <dt>autore:    </dt>
+                  <dd><address><a href="mailto:sandro.paganotti@gmail.com">Sandro Paganotti</a></address></dd>
+                  <dt>categoria: </dt>
+                  <dd><a href="categoria/multimedia">multimedia</a>,</dd>                   
+                  <dt>tags:      </dt>
+                  <dd><a href="tags/video">video</a>,</dd>
+                  <dd><a href="tags/canvas">canvas</a>,</dd>
+                  <dt>permalink: </dt>
+                  <dd><a href="2010/22/11/nuove-scoperte-sul-tag-video">permalink</a>,</dd>
+                  <dt>rank:</dt>
+                  <dd><meter value="3.0" min="0.0" max="5.0" optimum="5.0">ranked 3/5</meter></dd>
+              </dl>
+          </footer>
+		  
+          <!-- *** Commenti all'ultimo post *** -->
+          <section> 
+              <h1>Commenti</h1>
+              <article>
+                  <h1>
+                      <time datetime="2010-11-22">Luned&igrave; 22 Novembre</time>
+                      Angelo Imbelli ha scritto:
+                  </h1>
+                  <p>C'&egrave; un bell'esempio sulla rete: effetto ambi-light!</p>
+                  <footer>
+                      <address><a href="mailto:ambelli@mbell.it">Angelo Imbelli</a></address> 
+                  </footer>
+              </article>
+			  
+              <article>
+                  <h1>
+                      <time datetime="2010-11-23">Marted&igrave; 23 Novembre</time>
+                      Sandro Paganotti ha scritto:
+                  </h1>
+                  <p>Bellissimo! Grazie per la segnalazione!</p>
+                  <footer>
+                      <address><a href="mailto:sandro.paganotti@gmail.com">Sandro Paganotti</a></address> 
+                  </footer>
+              </article>   
+			  
+              <section>
+                  <h1>Inserisci un nuovo commento:</h1>                  
+                  <form name="frmCommenti">
+                      <fieldset name="dati-utente">
+                        <legend>Dati dell'utente</legend>
+                        <label>
+                           Nick:
+                           <input type="text" name="nickname" autocomplete="on" 
+                                  required pattern="[a-z]{1}[a-z_]{2,19}"
+                                  title="A nickname is composed by lowercase letters and '_'; 3 to 20 chars are allowed." 
+                                  placeholder="your_nickname">                                  
+                        </label>
+                        <label>
+                           Email:
+                           <input type="email" name="email" autocomplete="on" placeholder="email@domain.ext">                                  
+                        </label>  
+                        <label>
+                           Www:
+                           <input type="url" name="url" autocomplete="on" placeholder="http://mywebsite.com">                                  
+                        </label>                                                
+                        <label>
+                           Et&agrave;:
+                           <input type="number" name="age" min="13" max="130" step="1">                                  
+                        </label> 
+                        <label>
+                           Stato d'animo:
+                           <input type="text" name="mood" placeholder="felice, triste, incuriosito, ..." list="stato-danimo">                                  
+                           <datalist id="stato-danimo">
+                               <option value="triste">
+                               <option value="annoiato">
+                               <option value="curioso">
+                               <option value="felice">
+                               <option value="entusiasta!">
+                           </datalist>
+                        </label>                          
+                      </fieldset>
+					  
+                      <fieldset name="dati-commento">
+                        <legend>Messaggio e voto</legend>
+                        <label>
+                           Messaggio:
+                           <textarea name="messaggio" placeholder="scrivi qui il tuo messaggio (max 300 caratteri)" maxlength="300" required></textarea>    
+                        </label>
+                        <label>
+                           Voto:
+                           <input type="range" name="voto" min="0" max="5" step="1">                
+						</label>  
+                      </fieldset>
+					  
+                      <input type="reset"  value="Resetta la form">
+                      <input type="submit" value="Invia il commento">
+                  </form>
+              </section>
+          </section>
+          
+      </article>
+  </section>
+  
+  <!--  ****************** POST MENO RECENTI  ***************** -->
+  <section>
+      <h1>Post meno recenti</h1>
+      <article>
+          <header>
+              <time datetime="2010-11-10">10/11/2010</time>
+              <h1>Section e article: impariamo a conoscerli</h1>
+          </header>
+          <p>
+              Corre molta differenza tra questi due tag HTML5, se non dal punto di
+              vista della presentazione, quantomeno da quello semantico...
+              <a href="2010/11/10/section-article">continua a leggere</a>
+          </p>
+          
+          <footer>
+              <address><a href="mailto:nonesiste@non.st">Francesca Resta</a></address>
+          </footer>
+      </article>
+	  
+      <article>
+          <header>
+              <time datetime="2010-11-01">01/11/2010</time>
+              <h1>Chi ha paura del tag menu?</h1>
+          </header>
+          <p>
+              Caduto in disgrazia durante il regno HTML4 &egrave; stato riabilitato
+              a pieni voti da queste specifiche, scopriamone insieme l'utilizzo...
+              <a href="2010/11/01/menu-tag">continua a leggere</a>
+          </p>
+          
+          <footer>
+              <address><a href="mailto:nonesiste@non.st">Cesare Lamanna</a></address>
+          </footer>
+      </article>
+  </section>
+  
+  <aside>
+      <h1>Sidebar</h1>
+      <section>
+        <h1>Ricerca nel form:</h1>
+          <form name="ricerca" method="post" action="/search">
+            <label> Parola chiave:
+                <input type="search" autocomplete="on" placeholder="article, section, ..."
+                       name="keyword" required maxlength="50">
+            </label>
+            <input type="submit" value="ricerca">
+          </form>
+      </section>
+      <nav>
+          <h1>Categorie</h1>
+          <ul>
+             <li><a href="#">multimedia</a></li>
+             <li><a href="#">marcatori testuali</a></li>
+             <li><a href="#">forms</a></li>
+          </ul>
+      </nav>
+  </aside>
+  
+  <footer>
+      <dl>
+          <dt>Creato da</dt>
+          <dd><address><a href="mailto:sandro.paganotti@gmail.com">Sandro Paganotti</a></address></dd>
+          <dt>Ultimo aggiornamento</dt>
+          <dd><time datetime="2010-11-23">Marted&igrave; 23 Novembre</time></dd>
+      </dl>
+      <small>Tutti i contenuti sono prottetti dalla licenza creative commons</small>
+  </footer>
+</body> 
+</html>

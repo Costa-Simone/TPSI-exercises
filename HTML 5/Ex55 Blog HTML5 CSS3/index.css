@@ -1,0 +1,269 @@
+ @font-face {
+	font-family: 'SansationRegular';
+	src: local('Sansation'),  /* nome del font */
+	     url('font/Sansation_Regular.eot'),
+	 	 url('font/Sansation_Regular.woff') format('woff'), 
+		 url('font/Sansation_Regular.ttf') format('truetype'), 
+		 url('font/Sansation_Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SansationRegular';
+	src: local('Sansation'),   /* nome del font */
+	     url('font/Sansation_Bold.eot'),
+		 url('font/Sansation_Bold.woff') format('woff'), 
+		 url('font/Sansation_Bold.ttf') format('truetype'), 
+		 url('font/Sansation_Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* BODY */
+body {  
+	width:960px; 
+	margin:0 auto;
+	font-family: 'SansationRegular', Arial, Helvetica, sans-serif;
+	font-size:14px; 
+	color:#fff; 	
+	text-align:left;
+	background: url(img/sky.jpg) no-repeat center center fixed;
+	background-size: cover;	
+	line-height:150%; /* ripsetto al default */
+}
+
+/* ************ Tag Generali ***************************** */
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight:bold;  /* il bold è tolto dal reset */	
+	line-height:120%; 
+}
+time { 
+	color: #0099FF; 
+	font-size:9pt; 	 
+}
+
+a { 
+   text-decoration:none;
+   color:#ffCC00;
+}
+
+a:visited {color:#ffCC00;}
+a:hover  {color:#ffffff;}
+a:focus  {color:#ff0000;}   /* tasto tab */
+a:active {color:#bbbbbb;}   /* clickato  */
+
+dl {float:left; } 
+dt {float:left; margin-right:10px; } 
+dd {float:left; margin-right:20px; }
+
+
+
+
+/* *********************** header  *************************** */
+
+header #hgroup { margin:15px 0; }
+header #hgroup h1 {
+	 font-size:37.5pt; /* 50px; */
+	 color:#039;
+}
+header #hgroup h2 { 
+	font-size:18pt; 
+	color:#000;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+
+
+header  nav {  
+	width:920px; 
+	padding:20px; /* 920+20+20 = 960 come il  body */
+    background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+	/* 1px asse x (destra),  2px asse y (sotto), 2px sfumatura (blur)  */  
+	box-shadow:1px 2px 2px #000000;
+	/* flot perchè gli elementi interni sono float */
+    overflow:auto;
+}
+
+/* All'interno di nav ci sono due elementi: 
+   h1 e ul che vogliamo visualizzare sulla stessa riga. 
+   Quindi vengono impostati il prmo float:left e il secondo float:right.
+   Ne consegue che anche NAV dovrà essere float:left                     */
+header nav h1 { 
+	font-size:12pt; 
+	color:#CCCCCC; 	
+	float:left;
+}
+header  nav ul { 
+	float:right; 
+	list-style:none;
+}
+header  nav li {
+    /* I vari elementi LI devono essere visualizzati uno a fianco dell'altro,
+	   per cui devono essere float:left. 
+	   float:left deve essere su LI e non su A, 
+	   altrimenti LI andrebbe ad occupare l'intera riga !	                */
+    float:left; 
+	/* UL non ha dimensione, per cui si adatta alla somma degli LI
+	   i quali a loro volta non hanno dimensione e si adattano alla larghezza
+	   dei tag A interni.                                                   */
+	margin-right:20px; 
+}
+
+/* L'ultimo pulsante non deve avere il margin-right in quanto c'è già 
+   il padding di NAV.                                                       */
+header  nav li:last-of-type { margin-right:0; }
+
+header  nav  a { 
+    /* NO FLOAT !! */
+    display:block;
+	padding:10px 20px; 
+	font-size:16px; 
+	font-weight:bold;  
+	border-radius: 6px;
+	box-shadow: 1px 2px 2px #000000;
+	/* transition: all 2s; */
+	/* Impostando transition:all qusto provoca uno strano effetto 
+	   in apertura in cui i vari pulsanti compaiono da destra verso sinistra 
+	   ed anche il tag NAV raggiunge la sua dimensione gradatamente man mano 
+	   che 'sente' al suo interno l'altezza dei tag A. */
+    transition: transform 2s;
+	color:#FFF;  
+	background:rgba(0,0,51,0.4);
+}  
+
+
+header nav a:visited  { 
+	color:#FFF;  
+	background:rgba(0,0,51,0.4);
+}
+/* :hover deve essere scritto DOPO rispetto a :visited in quanto
+   un tag a:hover è allo stesso tempo :visited                        */
+header nav a:hover, header  nav a:focus, header  nav a:active { 
+	color:#fc0; 
+	background-color:#003;
+    transform: scale(1.2);
+}
+
+
+
+/* *********************** SECTIONS  ********************** */
+
+section, aside { 
+	float:left;  
+	padding:20px;
+	margin:20px 20px 20px 0; 
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px; 
+	/* border e padding non intervengono nel width globale  */
+    box-sizing:border-box;
+	box-shadow:1px 2px 2px #000000;
+}
+
+body > section:nth-of-type(1) { width: 420px;}
+body > section:nth-of-type(2) { width: 280px;}
+
+/* elimino il margin-right impostato in section */
+aside { width:220px; margin-right:0 }
+
+
+/* commenti e form relative all'ultimo post */
+/* + area ricerca e area pubblicità della aside bar */
+section section, aside section {
+    padding:0;
+	margin:20px 0 0 0; 
+	/* si assume il background-color dell'elemento sottostante */
+	background:transparent;
+	box-shadow: none; 
+}
+section section  { width:380px; }
+aside section { margin-bottom:30px;}
+
+
+
+/* ********************** CONTENUTI  ********************* */   
+
+/* Ogni article ha un suo header e un suo footer */
+article header{ margin-bottom:20px; }
+article footer { margin-bottom:10px; }
+
+section h1  { font-size:13.5pt; margin-bottom:5px;  }
+
+/* Titoli principali : grigio chiaro e carattere molto grande */
+section > h1, aside > h1 { font-size:18pt; color:#ccc; margin-bottom:10px; }
+/* !! la riga precedente però coinvolge anche i due h1 di aside figli diretti
+  del tag section interno da aside ('Ricerca nel form' e 'Categorie'). 
+  Per evitare qusto effetto, si può aggiungere aside section > h1, 
+  che è più specifico rispetto a section > h1, quindi lo maschera 
+  anche se venisse scritto in modo antecedente !!!                     */
+
+aside section > h1, aside nav > h1   { font-size:13.5pt; margin-bottom:5px;  }
+
+ 
+ 
+/* *********************** ASIDE  ********************** */
+aside nav h1 {color:#cccccc;}
+aside ul { 
+    margin-left:16px; 	 
+	margin-top:10px; 
+	font-size:16px; 
+}
+
+
+/* *********************** FOOTER  ********************** */
+body > footer { 
+	width:100%; 
+	clear:both; 
+	height:70px;
+	padding:20px;
+	margin:0 0 20px 0;
+	/* vuol dire che le dimensioni effettive sono 960x70 
+	   e che il padding è ricavato all'interno dell'area client  */
+	box-sizing:border-box;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+	box-shadow:1px 2px 2px #000000;
+}
+
+footer  address { text-align:right; } 
+footer small { float:right; }
+
+
+
+/* ******************** form  *********************** */
+
+legend { font-size:18px; color:#FFFF00; padding-bottom:5px; }
+
+input, textarea { 
+	width:100%;  
+	border:none; 
+	margin-bottom:10px;
+	padding:5px 0; 
+	border-radius: 5px; 	
+	background:rgba(255,255,255,0.9);	
+	color:#000000;
+	font-size:14px;
+	/* i controlli non ereditano il font da body */
+	font-family:'SansationRegular', Arial, Helvetica, sans-serif;
+}
+
+textarea { overflow:hidden;  
+         height:70px; 
+		 resize:none;
+}
+
+input[type="submit"], input[type="reset"] {
+	width:auto;  /* no 100 % */
+	margin:0 10px 0 0;
+	padding:5px 10px;
+	color:#FFFFFF; 	
+	background:rgba(0,0,51,0.5);
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover { 
+	background:#000033; 
+}
+
+
