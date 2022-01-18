@@ -53,5 +53,6 @@ h1{
 
 #wrapper{
 	display:flex;
-	flex-direction: row-reverse
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
 }
