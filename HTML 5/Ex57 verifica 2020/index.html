@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+   <meta charset="UTF-8">
+   <title>Verifica CSS3</title>
+   <link type="text/css" rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+   <div id="wrapper">
+   
+	<header>
+		<h1>Verifica HTML5 CSS3</h1>
+		<nav>
+			
+			<ul>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS3</a></li>
+				<li><a href="#">JavaScript</a></li>
+			</ul>
+			<h3>Visita le nostre pagine:</h3>
+		</nav>
+	</header>
+
+	<aside>  		
+			<section>  
+				<div id=progressBar> Registrati al nostro sito :</div> 
+				
+				<form id="form1">
+				<fieldset>
+					  <!-- inserire qui i controlli -->
+					  <legend> Compila la seguente scheda </legend>
+					  <br>
+					  <label for="txtUser"> Nome: </label>
+					  <input type="text" name="txtUser" id="txtUser" required minlength="8" placeholder="Inserisci Nome" />
+					  <br/><br/>
+					  <label for="txtCogno"> Cognome: </label>
+					  <input type="text" name="txtCogno" id="txtCogno" required minlength="8" placeholder="Inserisci Cognome" />
+					  <br/><br/>
+					  <label for="txtNascita"> Data di nascita: </label>
+					  <input type="date" name="txtNascita" id="txtNascita" min="2000-01-01" max="2010-12-31"/>
+					  <br/><br/>
+					  <label for="txtMediaVoti"> Classe: </label>
+					  <input type="number" name="txtMediaVoti" id="txtMediaVoti" required min="1.00" max="5.00" step="1"/>
+					  <br/><br/>
+					  <label for="txtInd"> Indirizzo </label>
+					  <input type="text" name="txtInd" id="txtInd" list="listaResidenza" required/>
+					  <datalist id="listaResidenza"> 
+						  <option> Elettronica </option>
+						  <option> Informatica </option>
+						  <option> Meccanica </option>
+					  </datalist>
+					  <br/><br/>
+					  <label for="txtConoscenze"> km da Fossano </label>
+					  <br/>
+					  <span> 1 </span>
+					  <input type="range" name="txtConoscenze" id="txtConoscenze" min="1" max="10" step="1"/>
+					  <span> 50 </span>
+					  <br/><br/>
+					  <button> Invia </button>
+				</fieldset> 
+
+				</form>			
+			</section>  
+			
+			<ul id="socialNetworks">
+				<li class="twitter"> <a href="#"> </a></li>
+				<li class="facebook"><a href="#"> </a></li>
+				<li class="linkedin"><a href="#"> </a></li>
+			</ul>	
+
+			
+		</aside> 
+    
+   	<section id="mainSection">  
+        <article>
+                <h2> Scarica le nostre Demo: </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut 
+					labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea 
+					commodi consequat.
+				</p>
+				<a href="#" class="demo"><img src="img/img1.png"></a>
+				<a href="#" class="demo"><img src="img/img2.png"></a>
+				<a href="#" class="demo"><img src="img/img3.png"></a>
+		   		<a href="#" class="demo"><img src="img/img4.png"></a>
+				<a href="#" class="demo"><img src="img/img5.png"></a>
+				<a href="#" class="demo"><img src="img/img6.png"></a>
+		</article>
+	</section>
+
+    </div>   <!-- wrapper -->   
+</body>
+</html>

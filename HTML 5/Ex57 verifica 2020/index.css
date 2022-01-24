@@ -1,0 +1,147 @@
+
+* {
+	/* CSS reset */
+	padding:0;
+	margin:0;
+}
+
+html, body, #wrapper {
+	height: 100%;
+	font-family: Verdana, Helvetica;
+	font-size: 11pt;
+}
+
+body {
+	background-image: url(img/sfondo.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+body > #wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	border: 1px solid blue;
+}
+
+body > #wrapper > header > h1 {
+	font-size: 30pt;
+	color: blue;
+	padding: 30px 0 30px 0;
+	text-align: center;
+	text-shadow: 3px 3px 4px #009;
+}
+
+body > #wrapper > header > nav {
+	width: 960px;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: rgba(64, 64, 64, 0.5);
+	border-radius: 12px;
+	box-shadow: 3px 3px 4px #000;
+	overflow: auto;
+}
+
+body > #wrapper > header > nav > h3 {
+	color: #0dd;
+}
+
+body > #wrapper > header > nav > ul {
+	border: 1px solid blue;
+	list-style-type: none;
+	float: right;
+	padding: 3px;
+}
+
+body > #wrapper > header > nav > ul > li {
+	width: 80px;
+	height: 35px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	background-image: radial-gradient(circle, #333 0%, #eee 100%);
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: 2px 2px 3px black;
+	margin: 10px;
+	padding: 10px;
+	transition: color 500ms, transform 500ms, background-image 500ms;
+	user-select: none;
+}
+
+
+body > #wrapper > header > nav > ul > li > a {
+	color: #0dd;
+	line-height: 35px;
+	text-decoration: none;
+}
+
+body > #wrapper > header > nav > ul > li:hover {
+	background-image: radial-gradient(circle, #00f 0%, #ddf 100%);
+	transform: scale(1.06);
+	color: yellow;
+}
+
+body > #wrapper > #mainSection {
+	width: 615px;
+	margin: 15px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 12px;
+	box-shadow: 3px 3px 4px #333;
+}
+
+body > #wrapper > #mainSection > article > p {
+	margin: 10px;
+}
+
+body > #wrapper > #mainSection> article > h2 {
+	margin: 10px;
+}
+
+body > #wrapper > #mainSection> article > a > img {
+	width: 192px;
+	margin: 4px;
+	opacity: 0.4;
+	border-radius: 12px;
+	box-shadow: 2px 2px 2px #888;
+	transition: transform 500ms;
+}
+
+body > #wrapper > #mainSection > article > a:hover > img {
+	opacity: 1;
+	transform: rotate(5deg);
+}
+
+body > #wrapper > aside {
+	float: right;
+	width: 310px;
+	margin: 12px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 12px;
+	box-shadow: 3px 3px 4px #333;
+}
+
+body > #wrapper > aside > section > #progressBar {
+	height: 20px;
+	margin: 15px;
+	background-color: #0d0;
+	animation: animazione1 3s linear infinite;
+	overflow: hidden;
+}
+
+@keyframes animazione1 {
+	0% { width: 1px; }
+	100% { width: 240px; }
+}
+
+body > #wrapper > aside > section > form > fieldset > button {
+	font-weight: bold;
+	padding: 5px 15px 5px 15px;
+	margin: 10px;
+	background-color: #bbb;
+	border-radius: 8px;
+	box-shadow: 3px 3px 2px #0ff, 6px 6px 2px black;
+	cursor: pointer;
+	float: right;
+}
