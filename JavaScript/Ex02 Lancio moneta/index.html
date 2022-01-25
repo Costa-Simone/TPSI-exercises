@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lancio Moneta</title>
+    <link rel="stylesheet" href="index.css"/>	
+    <script type="text/javascript" src="index.js">
+    </script>
+</head>
+
+<body onload="inizializza()">
+    <div id="wrapper">
+		<h1> Lancio della moneta</h1>
+		<label>
+			Quante volte vuoi lanciare la moneta ?
+			<input type="text" id="txtLanci" name="txtLanci">
+		</label>
+		<br>
+		<button id="btnLancia" name="btnLancia" onClick="lanciaMoneta()" > Lancia </button>
+		<div id="lblCroce">N. di volte in cui è uscito croce: </div>
+		<div id="lblTesta">N. di volte in cui è uscito testa: </div>
+	</div>
+</body>
+</html>
