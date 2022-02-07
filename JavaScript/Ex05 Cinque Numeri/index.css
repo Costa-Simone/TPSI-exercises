@@ -1,0 +1,57 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+html{
+	/* E' obbligatorio se il contenuto del wrapper non copre l'intera pagina  */
+	height:100%;    
+}
+
+body{
+	height:100%; 
+	background-color: #ccc;
+	/* elimina la barra di scorrimento verticale  */
+	overflow:hidden;	
+}
+
+#wrapper{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: white;
+}       
+
+#wrapper h1{
+	text-align: center;
+	padding:15px;
+}
+
+/* SOLO i figli diretti */
+#wrapper > *{
+	margin: 12px;
+}
+
+/* ******************************* */
+
+#wrapper input[type=number]{
+	/* larghezza complessiva 84 = 40 +20 +20 +2border + 2border */
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: 16pt;
+}
+#wrapper input[type=button]{
+    margin: 20px;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+}
+#wrapper input[type=checkbox]{
+    width: 30px;
+    height: 30px;
+    margin: 27px; /* (84 -30) / 2  */
+}
+
+

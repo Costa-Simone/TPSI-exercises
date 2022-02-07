@@ -20,24 +20,38 @@ function init() {
 }
 
 function gioca() {
-    let numeroUtente = parseInt(_txtNumero.value);
-
-    if(numeroUtente > numeroSegreto) {
-        cont++;
-        _divMessage.textContent = "Numero inserito troppo grande";
-    }
-    else if(numeroUtente < numeroSegreto) {
-        cont++;
-        _divMessage.textContent = "Numero inserito troppo piccolo";
+    if(_txtNumero.value == "") {
+        alert("Prego inserire un numero!");
     }
     else {
-        alert("Bravissimo hai indovinato in " + (cont + 1) + " tentativi");
+        let numeroUtente = parseInt(_txtNumero.value);
+        let vinto = false;
+    
+        if(numeroUtente > numeroSegreto) {
+            _divMessage.innerHTML += "Il numero " + numeroUtente + " inserito troppo grande <br/>";
+            
+            cont++;
+        }
+        else if(numeroUtente < numeroSegreto) {
+            _divMessage.innerHTML += "Il numero " + numeroUtente + " inserito troppo piccolo <br/>";
 
-        _btnGioca.disable = true;
+            cont++;
+        }
+        else {
+            alert("Bravissimo hai indovinato in " + (cont + 1) + " tentativi");
+    
+            _btnGioca.disabled = true;
+            vinto = true;
+            cont++;
+        }
+    
+        _divTentativi.textContent = "Tentativi: " + (cont);
+    
+        if(cont == 10 && !vinto) {
+            alert("Hai esaurito i tentativi!");
+            _btnGioca.disabled = true;
+        }
     }
-
-    _divMessage.textContent = "";
-    _divTentativi.textContent = "Tentativi: " + (cont + 1);
 }
 
 function generaNumero(a, b) { //estremo superiore escluso
