@@ -1,47 +1,55 @@
-"use strinct"
+"use strict"
 
-let _inTxtNum;
-let _inChkNum;
-let nRandom = [];
-let nUtente = [];
+let vet=[];
+let aus=[1,2,3,4,5];
+let _txtNum;
+let _chkNum;
+let _btnInvia;
+function init(){
 
-function init() {
-    _inTxtNum = document.getElementsByName("txtNum");
-    _inChkNum = document.getElementsByName("chkNum");
+    _txtNum=document.getElementsByName("txtNum");
+    _chkNum=document.getElementsByName("chkNum");
+    _btnInvia=document.getElementById("btnInvia");
 
-    let n = generaNumero(1, 6);
-    nRandom.push(n);
-
-    for(let i = 1; i < 5; i++) {
-        let esci = false;
-        let ferma = false;
-
-        do {
-            esci = false;
-            let j = 0;
-            n = generaNumero(1, 6);
-
-            while(!esci && j < i) {
-                if(n == nRandom[j]) {
-                    esci = true;
-                }
-                j++;
-            }
-
-            if(!esci) {
-                nRandom.push(n);
-                ferma = true;
-            }
-        }while(ferma)
+    for(let i=0; i<5; i++)
+    {
+        let pos=generaNumero(0,aus.length);
+        vet[i]=aus[pos];
+        //vet.push=aus[pos];
+        aus.splice(pos,1);
     }
-    console.log(nRandom);
+    console.log(vet);
+}
+    
+function invia(){
+
+    let cont=0;
+
+    for(let i=0; i<5; i++)
+    {
+        if(_txtNum[i].value == vet[i])
+        {
+            _chkNum[i].checked=true;
+            cont++;
+        }
+        else
+            _chkNum[i].checked=false;
+    }
+    if(cont==5)
+    {
+        alert("HAI VINTO!");
+        _btnInvia.disabled=true;
+        
+        for(let i=0; i<5; i++)
+        {
+            _txtNum[i].disabled=true;
+        }
+    }
 }
 
-function invia() {
-}
-
-function generaNumero(a, b) { //estremo superiore escluso
-    let ris = Math.floor((b-a) * Math.random()) + a;
+function generaNumero(a,b){
+    /*estremo superiore escluso*/
+    let ris=Math.floor((b-a)*Math.random())+a;
 
     return ris;
 }

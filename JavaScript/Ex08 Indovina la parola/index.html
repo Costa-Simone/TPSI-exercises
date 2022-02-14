@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Indovina la parola </title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1 align="center"> Indovina la Parola</h1>
+        <p> 
+	        <input type="button" value="Genera Parola Segreta" onclick="inizializza()" > 
+	        &nbsp;&nbsp;&nbsp;&nbsp; 
+	        Punti : <input type="text" id="txtPunti" readonly>
+        </p>
+        <p> 
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" /> 
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" />
+            <input type="text" name="txtCar" /> 
+        </p>
+        <p> 
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+        </p>
+        <p>
+	        <input type="text" id="txtIns">
+	        <input type="button" value="Invia" onClick="confronta()" id="btnInvia" disabled />
+        </p>
+        <p> 
+	        <input type="button" value="Risposta" onClick="rispondi()" id="btnRisposta" disabled />
+        </p>
+</div>
+</body>
+</html>
