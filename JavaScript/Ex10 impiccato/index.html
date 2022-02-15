@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css"/>
+        <script type="application/javascript" src="index.js"></script>
+        <title>Impiccato</title>
+		<style>
+			#txtParola{
+				width:360px;
+				font-size:20pt;		
+				letter-spacing:10px;				
+			}
+			
+			#txtLettera{
+				width:25px;
+				font-size:16pt;				 
+			}
+			
+			/* div figlio diretto di wraper */
+			#wrapper > div{    			     
+				display: grid;
+				grid-template-columns: 420px 530px;
+				grid-template-rows: 200px 
+				grid-column-gap:15px;
+			}
+
+			#wrapper div div  {
+				border: 1px solid #DDD;
+				margin-left:20px;
+				padding-left:10px;
+			}
+			
+			#wrapper div div:nth-of-type(2) {
+				 text-align:center;
+			}
+			
+			#wrapper div div p {
+				margin:20px 0 20px 0;
+				font-size:16pt;
+			}
+			
+			img{
+				width:281px;
+				height:242px;
+			}
+			
+			button{
+				padding:4px 8px 4px 8px;
+				font-size:15pt;
+			}
+
+		</style>
+    </head>
+    
+    <body>
+        <div id="wrapper">
+            <h1>Gioco dell'impiccato</h1>
+			
+			<div>
+				<div> <!-- Lato sinistro -->
+					<p> Parola Segreta: </p>
+					<input type="text" id="txtParola" readonly>
+					<p>
+						Inserisci una lettera: 
+						<input type="text" id="txtLettera" maxlength="1">
+						<button onclick="elabora()"> Invia </button>
+					</p>	
+				</div>
+				
+				<div> <!-- Lato destro -->
+					<img src="img/vuoto.png">
+				</div>			
+            </div>
+			
+        </div>
+    </body>
+</html>

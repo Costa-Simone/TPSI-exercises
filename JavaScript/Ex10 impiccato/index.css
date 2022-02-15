@@ -1,0 +1,36 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+html{
+	/* E' obbligatorio se il contenuto del wrapper non copre l'intera pagina  */
+	height:100%;    
+}
+
+body{
+	height:100%;    
+	background-color: #ccc;
+	/* elimina il fastidiosissimo bordino grigio superiore dovuto alla presenza
+	   della barra di scorrimento verticale  */
+	overflow:hidden;	
+}
+
+#wrapper{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: white;
+}       
+
+#wrapper h1{
+	text-align: center;
+	padding:30px;
+}
+
+/* SOLO i figli diretti */
+#wrapper > *{
+	margin: 12px;
+}
+
+
