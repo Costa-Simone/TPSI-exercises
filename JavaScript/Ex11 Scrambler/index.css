@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+	font-family: "Courier New";
+}
+
+html{
+	height:100%;
+}
+
+body{
+	height:100%;
+	background-color:#CCC;
+}
+
+#wrapper{
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+	background-color:#FFF;
+	padding:15px;
+}
+
+#wrapper h1{
+	text-align:center;
+}
+
+#wrapper *{
+	margin:6px;
+}

@@ -8,8 +8,7 @@
 		<style>
 			#txtParola{
 				width:360px;
-				font-size:20pt;		
-				letter-spacing:10px;				
+				font-size:20pt;				
 			}
 			
 			#txtLettera{
@@ -21,7 +20,7 @@
 			#wrapper > div{    			     
 				display: grid;
 				grid-template-columns: 420px 530px;
-				grid-template-rows: 200px 
+				grid-template-rows: 200px, 300px;
 				grid-column-gap:15px;
 			}
 
@@ -60,7 +59,7 @@
 			<div>
 				<div> <!-- Lato sinistro -->
 					<p> Parola Segreta: </p>
-					<input type="text" id="txtParola" readonly>
+					<input type="text" id="txtParola" readonly autocomplete="off">
 					<p>
 						Inserisci una lettera: 
 						<input type="text" id="txtLettera" maxlength="1">

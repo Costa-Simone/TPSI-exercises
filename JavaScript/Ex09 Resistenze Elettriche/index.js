@@ -6,6 +6,8 @@ let _lstFattore;
 let _lstTolleranza;
 let colori = ["argento", "oro", "nero", "marrone", "rosso", "arancio", "giallo", "verde", "blu", "viola", 
             "grigio", "bianco"];
+let tolleranza = [" ± 10 %" , " ± 5 %", "", " ± 1 %", " ± 2 %", "", "",
+                    " ± 0,5 %", " ± 0,25 %", " ± 0,1 %", "", ""];
 let _txtRisultato;
 
 window.onload = function() {
@@ -29,6 +31,8 @@ window.onload = function() {
         _lstFattore.innerHTML += html;
 
         if(i != 2 && i != 5 && i != 6 && i != 10 && i != 11) {
+            html = `<option value='${tolleranza[i]}'> ${colori[i]} </option>`;
+
             _lstTolleranza.innerHTML += html;
         }
     }
@@ -40,6 +44,11 @@ window.onload = function() {
 function calcola() {
     let cifre;
 
-    cifre = colori.lastIndexOf(_lstCifra1.innerHTML.innerHTML);
-    console.log(cifre);
+    cifre = parseInt(_lstCifra1.value + _lstCifra2.value) * Math.pow(10, _lstFattore.value);
+
+    let resistenza = cifre.toString() + " ohm" + _lstTolleranza.value;
+    
+    console.log("Cifre -->" , cifre);
+    console.log("Tolleranza -->", _lstTolleranza.value);
+    _txtRisultato.innerHTML = "Il risultato e': <b>" + resistenza + "</b>";
 }
