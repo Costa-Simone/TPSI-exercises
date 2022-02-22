@@ -1,0 +1,29 @@
+html, body{
+	height: 100%;    
+	background-color: dodgerblue;
+}
+#wrapper{
+	width: 900px;
+	height: 100%;
+	border: 1px solid black;
+	margin: 30px auto;
+	background-color: white;
+	box-shadow: 1px 1px 20px  black;
+}       
+#wrapper h1{
+	text-align: center;
+}
+#wrapper > *{
+	margin: 15px;
+}
+
+#wrapper div input[type=text]{
+	width:45px;
+	margin:0;
+	font-size:15pt;		
+    text-align:center;	
+}
+#wrapper div input[type=checkbox]{
+	width:45px;
+	margin:0;
+}

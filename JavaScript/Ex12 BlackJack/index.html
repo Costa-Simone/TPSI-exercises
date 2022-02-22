@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title> Black Jack </title>
+	<script type="text/javascript" src="index.js"> </script>
+	<style>
+		h1{
+			margin-top: 20px;
+		}
+		#wrapper{
+		   margin:12px auto;
+		   width:fit-content;
+		}	
+		input[name=txtNum]{
+			width:40px;
+			margin:0;
+			font-size:20pt;
+			text-align:center;
+		}
+		input[type=checkbox]{
+			width:40px;
+			margin:0;
+		}
+		td{
+			border:0
+		}
+	</style>
+</head>
+
+<body>
+  
+  <h1 align="center"> Black Jack</h1>
+	<div id="wrapper">   
+		<p> 
+			Banco :  
+			<input type="text" id="txtBanco" readonly>
+			<input type="button" id="btnBanco" value="Nuova Carta" onclick="banco()">
+		</p>
+		
+		<br>
+		
+		<p>	Giocatore : <input type="text" id="txtUser" readonly> </p>		
+		<table border="1" cellspacing="3" cellpadding="2">
+		<tr>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		  <td><input type="text" name="txtNum" readonly autocomplete="off"></td>
+		</tr>
+		<tr>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(0)" autocomplete="off"></td>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(1)" autocomplete="off"></td>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(2)" autocomplete="off"></td>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(3)" autocomplete="off"></td>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(4)" autocomplete="off"></td>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(5)" autocomplete="off"></td>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(6)" autocomplete="off"></td>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(7)" autocomplete="off"></td>
+		  <td> <input type="checkbox" name="chkNum" onClick="visualizza(8)" autocomplete="off"></td>
+		</tr>
+		</table>
+	</div>
+</body>
+</html>

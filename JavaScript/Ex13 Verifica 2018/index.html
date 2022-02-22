@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Impariamo il codice ASCII </title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="application/javascript" src="index.js"></script>
+</head>
+
+<body onLoad="init()">
+    <div id="wrapper">
+        <h3 align="center"> Impariamo il codice ASCII</h3>
+        <hr>
+        <div> 
+		    <select id="voci" onChange="genera()">
+			   <option value="65-90"> lettere MAIUSCOLE </option>
+			   <option value="97-122">lettere minuscole </option>
+			   <option value="48-57"> numeri </option>
+			</select>
+        </div>
+		<br>
+        <div> 
+		    <p> valori generati casualmente : </p>
+            <input type="text" name="txtNum" />
+            <input type="text" name="txtNum" />
+            <input type="text" name="txtNum" />
+            <input type="text" name="txtNum" />
+            <input type="text" name="txtNum" />
+            <input type="text" name="txtNum" />
+        </div>
+		<br>
+        <div> 
+		    <p> inserisci il carattere ascii corrispondente : </p>
+            <input type="text" name="txtAscii" onkeyup="check()"/>
+            <input type="text" name="txtAscii" onkeyup="check()"/>
+            <input type="text" name="txtAscii" onkeyup="check()"/>
+            <input type="text" name="txtAscii" onkeyup="check()"/>
+            <input type="text" name="txtAscii" onkeyup="check()"/>
+            <input type="text" name="txtAscii" onkeyup="check()"/>
+        </div>
+        <div> 
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" >
+        </div>
+        <div> 
+	        <input type="button" value="controlla" id="btnControlla" onclick="controllaN()"/>
+        </div>
+</div>
+</body>
+</html>

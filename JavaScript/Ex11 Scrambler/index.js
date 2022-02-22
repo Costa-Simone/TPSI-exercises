@@ -27,9 +27,29 @@ window.onload = function() {
 
 function scrambler() {
     _txt2.value = "";
+    _txt1.value = _txt1.value.toUpperCase();
 
-    for(let i = 0; i < txt1.value.length; i++) {
-        _txt2.value += 
+    for(let i = 0; i < _txt1.value.length; i++) {
+        if(vet1.indexOf(_txt1.value[i]) == -1) {
+            _txt2.value += _txt1.value[i];
+        }
+        else {
+            _txt2.value += vet2[vet1.indexOf(_txt1.value[i])];
+        }
+    }
+}
+
+function descrambler() {
+    _txt2.value = "";
+    _txt1.value = _txt1.value.toUpperCase();
+
+    for(let i = 0; i < _txt1.value.length; i++) {
+        if(vet1.indexOf(_txt1.value[i]) == -1) {
+            _txt2.value += _txt1.value[i];
+        }
+        else {
+            _txt2.value += vet1[vet2.indexOf(_txt1.value[i])];
+        }
     }
 }
 
