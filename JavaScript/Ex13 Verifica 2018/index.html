@@ -1,12 +1,15 @@
-﻿<html>
-<head>
-    <meta charset="UTF-8">
-    <title> Impariamo il codice ASCII </title>
-    <link rel="stylesheet" href="index.css" />
-    <script type="application/javascript" src="index.js"></script>
-</head>
 
-<body onLoad="init()">
+<!DOCTYPE html>        <!--  documento html 5  --> 
+<html lang="it">
+
+   <head>
+        <meta charset="UTF-8" />
+        <title> Impariamo il codice ASCII </title>
+        <link rel="stylesheet" href="index.css" />
+        <script type="application/javascript" src="index.js"></script>
+   </head>
+   
+   <body>
     <div id="wrapper">
         <h3 align="center"> Impariamo il codice ASCII</h3>
         <hr>
@@ -30,24 +33,24 @@
 		<br>
         <div> 
 		    <p> inserisci il carattere ascii corrispondente : </p>
-            <input type="text" name="txtAscii" onkeyup="check()"/>
-            <input type="text" name="txtAscii" onkeyup="check()"/>
-            <input type="text" name="txtAscii" onkeyup="check()"/>
-            <input type="text" name="txtAscii" onkeyup="check()"/>
-            <input type="text" name="txtAscii" onkeyup="check()"/>
-            <input type="text" name="txtAscii" onkeyup="check()"/>
+            <input type="text" name="txtAscii" onkeyup="check(0)"/>
+            <input type="text" name="txtAscii" onkeyup="check(1)"/>
+            <input type="text" name="txtAscii" onkeyup="check(2)"/>
+            <input type="text" name="txtAscii" onkeyup="check(3)"/>
+            <input type="text" name="txtAscii" onkeyup="check(4)"/>
+            <input type="text" name="txtAscii" onkeyup="check(5)"/>
         </div>
         <div> 
-	        <input type="checkbox" name="chkRis" >
-	        <input type="checkbox" name="chkRis" >
-	        <input type="checkbox" name="chkRis" >
-	        <input type="checkbox" name="chkRis" >
-	        <input type="checkbox" name="chkRis" >
-	        <input type="checkbox" name="chkRis" >
+	        <input type="checkbox" name="chkRis" disabled>
+	        <input type="checkbox" name="chkRis" disabled>
+	        <input type="checkbox" name="chkRis" disabled>
+	        <input type="checkbox" name="chkRis" disabled>
+	        <input type="checkbox" name="chkRis" disabled>
+	        <input type="checkbox" name="chkRis" disabled>
         </div>
         <div> 
 	        <input type="button" value="controlla" id="btnControlla" onclick="controllaN()"/>
         </div>
-</div>
-</body>
+   </body>
+
 </html>
