@@ -1,0 +1,52 @@
+html, body{
+	height: 100%;    
+	background-color: dodgerblue;
+}
+#wrapper{
+	width: 900px;
+	height: 100%;
+	border: 1px solid black;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 1px 1px 20px  black;
+	overflow:auto;
+}       
+#wrapper h2{
+	text-align: center;
+	margin-top:20px;
+}
+
+#wrapper div:nth-of-type(1){
+	width:200px;
+	margin-left:100px;
+	padding-top:60px;
+	float:left;
+}
+#wrapper div:nth-of-type(2){	
+	width:340px;
+	margin-right:50px;
+	float:right;
+}
+
+
+#wrapper div:nth-of-type(2) img	{
+	vertical-align:middle;
+}
+#wrapper div:nth-of-type(2) input{
+	margin:6px;
+	vertical-align:middle;
+}
+
+
+#wrapper input[type=radio]{
+	margin-left: 30px;
+}
+#wrapper input[type=text]{
+	font-size:15pt;		
+	width:120px;
+}
+#wrapper input[type=button]{
+	font-size:15pt;		
+	font-weight:bold;
+	width:230px;
+}
