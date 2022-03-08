@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Validazione Form</title>
+	<link rel="stylesheet" href="index.css" />
+	<script type="text/javascript" src="libreria.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<h2>VALIDAZIONE DATI FORM</h2>
+		<form action="pagina2.html" method="get" name="formUtente" <!--onSubmit="return validaForm();-->">
+			MATRICOLA:
+			<input type="text" id="matricola" name="matricola"  maxlength="12">
+			<br>
+			COGNOME:
+			<input type="text" id="cognome" name="cognome" maxlength="40">
+			<br>
+			NOME:
+			<input type="text" id="nome" name="nome" maxlength="30">
+			<br>
+			GENERE:
+			<input type="radio"  name="genere">M
+			<input type="radio"  name="genere">F
+			<br>
+			REGIONE:
+			<select id="regione" name="regione">
+				<option value="valdaosta">Val d’Aosta</option>
+				<option value="piemonte">Piemonte</option>
+				<option value="liguria">Liguria</option>
+				<option value="lombardia">Lombardia</option>
+				<option value="veneto">Veneto</option>
+				<option value="trentino">Trentino Alto Adige</option>
+				<option value="friuli">Friuli Venezia-Giulia</option>
+				<option value="emilia">Emilia-Romagna</option>
+				<option value="toscana">Toscana</option>
+				<option value="marche">Marche</option>
+				<option value="umbria">Umbria</option>
+				<option value="lazio">Lazio</option>
+				<option value="abruzzo">Abruzzo</option>
+				<option value="molise">Molise</option>
+				<option value="campania">Campania</option>
+				<option value="basilicata">Basilicata</option>
+				<option value="puglia">Puglia</option>
+				<option value="calabria">Calabria</option>
+				<option value="sicilia">Sicilia</option>
+				<option value="sardegna">Sardegna</option>
+			</select>
+			<br>
+			STUDENTE LAVORATORE
+			<input type="checkbox" id="lavoratore" name="lavoratore" >
+			<br>
+			DESCRIZIONE LAVORO:
+			<input type="text" id="descrizione"  name="descrizione"  maxlength="80" disabled>
+			<br>
+			RICHIESTE PARTICOLARI:
+			<br>
+			<textarea name="richieste" cols="60" rows="12"></textarea>
+			<div class="buttons">
+				<input type="button" value="INVIA">
+				<input type="reset" value="RESET">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

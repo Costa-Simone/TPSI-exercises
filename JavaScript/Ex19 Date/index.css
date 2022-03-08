@@ -1,0 +1,103 @@
+header{
+    background-color: #ddd;
+    border: 1px solid #777;
+    border-radius: 20px;
+    width: 650px;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+	
+    font-family: Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+    font-size: 14pt;
+	letter-spacing:-1px;
+}
+
+header h1 {
+    font-size: 20pt;
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: #FFC;
+    width: 510px;
+    height: 460px;
+    border-radius: 10px;
+    border: 1px solid #777;	
+}
+
+#grid{
+	margin:0;
+	padding:0;
+	width: fit-content;
+    display: grid;
+    grid-template-columns: 200px 130px 140px;
+    grid-template-rows: 30px 30px 30px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+#grid *{
+	/* allineamento verticale degli elementi interni */
+	align-self:center;
+}
+#grid span{
+	font-size: 11pt; 
+	font-weight:normal;
+	letter-spacing:0;
+}
+
+#grid > span{
+	color:#BBB;
+}
+
+
+#wrapper p{
+    text-align: center;
+}
+
+#imgSconto {
+    width: 150px;
+    height: 120px;
+    background-color: #FFC;
+	border:none;
+}
+
+/* in caso di assenza di src il bordo viene comunque visualizzato !! */
+#imgSconto[src=""] { 
+    display: none; 
+}
+
+
+
+
+#btnCalcola{
+    width: 140px;
+    height: 50px;
+    font-size: 12pt;
+	font-weight:bold;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #AAA;
+    background-color: #5E5;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    box-shadow: 3px 3px 2px #333;
+	/* toglie il bordino di selezione quando il pulsante è premuto */
+	outline: 0; 
+}
+
+#btnCalcola:active{
+    box-shadow: inset 3px 3px 2px #333;
+	/* toglie il bordino di selezione quando il pulsante è premuto */
+    outline: 0;
+}
+
+
+#wrapper p:nth-of-type(2)  span{
+    color:blue;
+	padding-left:10px;
+}
+

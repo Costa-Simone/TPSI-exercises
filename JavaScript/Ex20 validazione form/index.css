@@ -1,0 +1,55 @@
+
+#wrapper {
+  width: 780px;
+  border: 1px solid black;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 10px 10px 15px 5px black;
+}
+
+h2, .buttons {
+  text-align: center;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid lightgreen;
+}
+
+
+input[type=text], select, textarea {
+  min-height: 30px;
+  min-width: 200px;
+  margin: 10px 7px;
+}
+
+input[type=radio], input[type=checkbox]{
+	width:20px;
+	height:20px;
+	margin:15px 7px;
+}
+
+input[type=radio]:nth-of-type(5){
+	margin-left:25px;	 
+}
+
+input:last-of-type{
+	margin-bottom:20px;
+	width:350px;
+}
+
+
+.buttons > input {
+  margin-top: 30px;
+  box-sizing: content-box;
+  font-size: larger;
+  border: 2px solid lightgray;
+  background-color:#BCB;
+  width:65px; 
+	cursor:pointer;
+}
+
+
+.red-border {
+  border-color: red;
+}

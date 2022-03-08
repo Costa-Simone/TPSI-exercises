@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html lang="it">
+ <head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="index.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>	
+    <script type="application/javascript" src="index.js"></script>
+	<title> Esercizio 16 </title>
+ </head>
+ <body>
+  <header>
+	<h1 align="center"> Prenota la tua vacanza </h1>
+	<div id="wrapper">
+		<div id="grid">
+			<label for="txtNPartecipanti">
+				Numero Partecipanti
+			</label>
+			<input type="number" name="txtNPartecipanti" id="txtNPartecipanti" 
+				   min="1" max="9" step="1" value="4" >
+			<span>1 .. 9</span>
+			
+			<label for="txtDataInizio">
+				Data Inizio
+			</label>
+			<input type="date" name="txtDataInizio" id="txtDataInizio" >
+			<span>GG/MM/AAAA</span>
+			
+			<label for="txtDataFine">
+				Data Fine
+			</label>
+			<input type="date" name="txtDataFine" id="txtDataFine" >
+			<span>GG/MM/AAAA</span>
+		</div>
+		<p><img id="imgSconto" src=""></p>
+		<input type="button" id="btnCalcola" value="CALCOLA" ><br>
+		<p>TOTALE: <span id="risultato">X.XXX,XX €</span></p>
+	</div>
+		
+  </header>
+ </body>
+</html>

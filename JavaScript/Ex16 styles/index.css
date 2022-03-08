@@ -1,0 +1,30 @@
+#wrapper {
+  width: 720px;
+  border: 1px solid black;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 10px 10px 15px 5px black;
+}
+
+#wrapper div:nth-of-type(1){
+	text-align: center;
+    padding: 0;
+    width: 600px;
+    height: 200px;
+    margin: 20px auto;
+    line-height: 200px;
+    border: 2px solid red;
+    font-size: 20pt;
+    font-weight: bold;
+    color: yellow;
+    background-color: blue;
+}
+#wrapper > * {
+    margin: 10px;
+}
+
+#wrapper img{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
