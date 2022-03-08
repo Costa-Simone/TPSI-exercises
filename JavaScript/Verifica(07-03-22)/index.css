@@ -1,0 +1,83 @@
+
+#wrapper{
+	width: 900px;
+	border: 1px solid black;
+	margin: 30px auto;
+	box-shadow: 1px 1px 20px  black;
+}       
+#wrapper h2{
+	text-align: center;
+	margin:30px;
+	font-size:18pt;
+}
+
+/* ************************************************ */
+
+#wrapper div:nth-of-type(1){
+	background-color:#AFA;
+	width:290px;
+	height:600px;
+	margin-left:40px;
+	padding:20px;
+	float:left;
+}
+#wrapper div:nth-of-type(2){
+	background-color:#FFA;
+	width:290px;
+	margin-right:40px;
+	float:right;
+}
+
+
+/* ********************************************* */
+#wrapper > div > p{
+	font-size:34pt;		
+	font-weight:bold;
+	text-align:center;
+	margin-top:150px;
+}
+#bandiera{
+	display:block;
+	width:160px;
+	margin:0 auto;
+}
+
+/* ********************************************* */
+#wrapper input[type=text], #wrapper input[type=checkbox] {
+	margin:4px 8px;
+	vertical-align:middle;
+}
+#wrapper input[type=checkbox]{
+	margin-left:35px;
+}
+#wrapper input[type=text]{
+	font-size:13pt;		
+	width:120px;
+	margin-right:15px;
+	height:24px;
+}
+.img{
+	width:32px;
+	vertical-align:middle;
+}
+
+
+/* ********************************************* */
+#wrapper input[type=button]{
+	font-size:14pt;		
+	font-weight:bold;
+	width:150px;
+	padding:6px;
+	display:block;
+	margin:30px auto;
+}
+
+#wrapper >  p{
+	font-size:13pt;	
+	text-align:center;
+}
+
+#wrapper >  p > span{
+	font-size:15pt;	
+	font-weight:bold;
+}
