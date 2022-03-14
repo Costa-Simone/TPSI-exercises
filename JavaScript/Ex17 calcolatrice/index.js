@@ -42,32 +42,25 @@ function segno() {
 function risultato() {
     switch(operatore) {
         case '+':
-            _txtDisplay.value = (primoNumero + parseInt(_txtDisplay.value));
+            _txtDisplay.value = (primoNumero + parseFloat(_txtDisplay.value));
             break;
 
         case '-':
-            _txtDisplay.value = (primoNumero - parseInt(_txtDisplay.value));
+            _txtDisplay.value = (primoNumero - parseFloat(_txtDisplay.value));
             break;
 
         case '*':
-            _txtDisplay.value = (primoNumero * parseInt(_txtDisplay.value));
+            _txtDisplay.value = (primoNumero * parseFloat(_txtDisplay.value));
             break;
 
         case '/':
-            _txtDisplay.value = (primoNumero / parseInt(_txtDisplay.value));
+            _txtDisplay.value = (primoNumero / parseFloat(_txtDisplay.value));
             break;
     }
-    
 }
 
 function cancella() {
     primoNumero = 0;
     operatore = "";
     _txtDisplay.value = "";
-}
-
-function generaNumero(a, b) { //estremo superiore escluso
-    let ris = Math.floor((b-a) * Math.random()) + a;
-
-    return ris;
 }
