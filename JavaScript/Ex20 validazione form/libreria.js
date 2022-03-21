@@ -18,4 +18,3 @@ function isLetter(s){
     }
 	return true;      
 }
-
