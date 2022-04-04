@@ -1,0 +1,37 @@
+h1{
+	text-align:center;
+}
+
+#wrapper{
+	width:186px;
+	height:186px;
+	margin:15px auto;
+	border:0px;			
+	/*  
+		display:flex;
+		flex-wrap:wrap;
+	*/			
+}
+
+.pedina {
+	width:40px;
+	height:40px;			
+	margin:2px;
+	padding:0;
+	border:1px solid black;
+	background-color: #CCC;
+	color:#fff;
+	font-size:16pt;
+	font-weight:bold;	
+	text-align:center;			
+	line-height:40px;
+	
+	display:inline-block;	
+	vertical-align:middle;
+	
+	/* senza vertical-align dispaly:inline-block falsa gli allineamenti */
+	/* 1° alternativa potrebbe essere quella di inizializzare le celle con "&nbsp;" */
+	/* 2° alternativa impostare il flex layout sul contenitore */
+				
+	user-select:none;
+}
