@@ -11,6 +11,8 @@ window.onload = function() {
     for(let i = 1; i <= 15; i++) {
         vet.push(i);
     }
+
+    let cont = 0;
     
     for(let i = 0; i < MIN; i++) {
         for(let j = 0; j < MAX; j++) {
@@ -80,7 +82,7 @@ window.onload = function() {
         let esci = false;
         let i = 0;
         let j = 0;
-        let cont = 1;
+        let cont = 0;
 
         while(!esci && i < MIN) {
             j = 0;
@@ -88,12 +90,11 @@ window.onload = function() {
             while(!esci && j < MAX) {
                 let cella = document.getElementById(`div-${i}-${j}`);
 
-                if(parseInt(cella.innerHTML) != 16) {
+                cont++;
+
+                if(parseInt(cella.innerHTML) < 16) {
                     if(parseInt(cella.innerHTML) != cont) {
                         esci = true;
-                    }
-                    else {
-                        cont++;
                     }
                 }
 

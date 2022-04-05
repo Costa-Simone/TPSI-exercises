@@ -1,0 +1,77 @@
+html{
+    height: 90%;
+    background-color: #777;
+}
+body{
+    height: 90%;
+    margin: 0px;
+    background-color: #777;
+}
+#wrapper{
+    width: 480px;
+    height: 100%;
+    padding: 25px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 20px 7px black;
+	overflow:auto;
+}
+
+/* ************************************************* */
+h1{
+	margin:25px auto; 
+	text-align:center		
+}
+
+#giocatori{
+	text-align:center;
+}
+
+#giocatori span{
+	display:inline-block;
+	width:200px;
+	font-size:14pt;
+}
+
+#wrapper > div{
+	overflow:auto;
+	margin-bottom:25px;
+}
+
+.big{
+  width:140;
+  height:210;
+}
+
+.big:first-of-type{
+	float:left;
+	margin-left:60px;
+}
+
+.big:last-of-type{
+	float:right;
+	margin-right:50px;
+}
+
+
+.small{
+  width:50;
+  height:75;
+  background-size:contain;
+  float:left;
+  margin-left:20px;
+}
+
+input[type=button]{
+	display:block;
+	margin:0 auto;
+	width:90px;
+	height:30px;
+	box-shadow:2px 2px;
+}
+
+#txtRisultato{
+	text-align:center;
+	margin-top:10px;
+}

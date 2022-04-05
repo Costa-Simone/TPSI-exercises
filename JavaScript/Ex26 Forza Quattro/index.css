@@ -1,0 +1,38 @@
+    *{
+		padding: 0;
+		margin: 0;
+	}
+	h1{
+		font-size: 70px;
+		font-weight: bold;
+		letter-spacing:-3px;
+		margin: 20px auto;
+		padding:0px;
+		text-align:center;
+	}
+	#wrapper{
+	    border:1px solid black;
+        width:490px;  /* 70px * 7 pedine */
+        margin:0 auto;
+		padding:5px;
+	}
+
+	.pedina{
+		width:60px;
+        height:60px;
+		display:inline-block;
+		vertical-align:middle;
+		border-Radius:50%;
+		background-color:rgb(127, 127, 127);	
+		margin:5px;
+	}
+	
+	h3{
+		text-align:center;
+	}
+	
+	#nextPlayer{
+		/* impostazioni inutili in quanto _nextPlayer utilizzerà la classe .pedina */
+		display:inline-block;
+		vertical-align:middle;
+	}
