@@ -1,0 +1,50 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-size: 55px;
+	font-weight: bold;
+	letter-spacing:-3px;
+	margin: 20px auto;
+	text-align:center;
+}
+
+#header{
+	text-align:center;
+}
+
+label, select{	
+	font-weight: bold;
+	letter-spacing:-1px;
+	margin: 20px auto;
+}
+label{font-size: 18pt;}
+select{font-size: 14pt;}
+p{margin-bottom:20px; font-size:13pt;}
+
+/* ***************************************** */
+
+#wrapper{
+	margin: 10px auto;
+	border:1px solid #ccc;
+	user-select:none;
+}
+
+.pedina{
+	width:46px;
+	height:46px;
+	display:inline-block;
+	margin:2px 2px;
+	background-color:#AFA;
+	font-weight:bold;
+	font-size:15pt;
+	text-align:center;
+	line-height:46px;
+}
+
+.pedina:hover{
+	cursor:pointer;
+}
+
