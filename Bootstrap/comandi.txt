@@ -1,0 +1,8 @@
+-navbar-expand-md — This denotes at which point the navigation bar expands from vertical or hamburger icon to a full-size horizontal bar. In this case, we have set it to medium screens, 
+			which, in Bootstrap, is anything greater than 768px.
+-navbar-brand — This is used for your website branding. You can also include a logo image file here.
+-navbar-toggler — Denotes the toggle button for the collapsed menu. The piece data-toggle="collapse" defines that this will turn to a hamburger menu, 
+			not to drop-down, which is the other option. It’s important that you define a data-target with a CSS id (defined by the #) and 
+			wrap a <div> with the same name around the actual navbar element.
+-navbar-toggler-icon — As you can probably guess, this creates the icon users click on to open the menu on smaller screens.
+-navbar-nav — The class for the <ul> list element that holds the menu items. The latter are denoted with nav-item and nav-link.
