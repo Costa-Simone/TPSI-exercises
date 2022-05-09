@@ -11,9 +11,9 @@
     <h1 align="center">Registrazione a Vallauri.edu</h1>
 	<div id="wrapper">
 	    <label for="txtName"> imposta username: </label>
-		<input type="text" id="txtUser" placeholder="nome"> 
+		<input type="text" id="txtUser" placeholder="nome" autocomplete="off"> 
 	    <label for="txtPwd"> imposta password: </label>
-		<input type="text" id="txtPwd" placeholder="password"> 
+		<input type="text" id="txtPwd" placeholder="password" autocomplete="off"> 
 		
 		<div id="captchaContainer">
 			<div class="captcha"> </div>
@@ -23,8 +23,8 @@
 			<div class="captcha"> </div>
 		</div> 
 		
-		<input type="text" id="txtCaptcha" />
-		<input type="button" id="btnControllaCaptcha" value="Non sono un Robot"  />
+		<input type="text" id="txtCaptcha"   autocomplete="off"/>
+		<input type="button" id="btnControllaCaptcha" value="Non sono un Robot"/>
 		<img id="imgOk">
 		<input type="button" id="btnGeneraCaptcha" value="Genera un altro captcha" />
 		
