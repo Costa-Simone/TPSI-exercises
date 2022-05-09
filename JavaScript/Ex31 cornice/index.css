@@ -1,0 +1,18 @@
+h1{
+	text-align:center;
+}
+
+#wrapper{
+	width:440px;
+	height:440px;
+	margin:15px auto;
+}
+
+#wrapper div{
+	width:40px;
+	height:40px;			
+	margin:2px;
+	padding:0;
+	background-color: #CCC;
+	display:inline-block;
+}

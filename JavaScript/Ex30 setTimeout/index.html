@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <script type="text/javascript" src="index.js"></script>
+	<style>
+		#wrapper{
+			margin:60px auto; 
+			margin-bottom:15px;
+			width:200px;
+		}
+	    #lblRisultato{
+			width: 300px; 
+			border: 2px solid black; 
+			margin: 0 auto; 
+			height: 200px; 
+			padding: 30px; 
+			font-size: 30pt; 
+			font-weight: bold; 
+			text-align: center; 
+			line-height: 200px;	   
+	    }
+		img:nth-of-type(2){
+			border: 1px solid black;
+			width:67px;
+			height:92px;
+		}
+		p{
+			display:inline;
+		}
+	</style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <img src="img/dorso.JPG"> &nbsp; &nbsp; &nbsp;
+        <img id="imgCarta"> 
+        <br/><br/>
+		
+        <input type="button" id="btnGioca" value="Gioca">
+        <br/><br/>
+		
+        Punteggio: <p id="lblSomma"> 0 </p> <br/>
+        Numero di carte estratte: <p id="lblCarte"> 0 </p>
+    </div>
+	
+    <div id="lblRisultato"> </div>
+	
+</body>
+</html>
