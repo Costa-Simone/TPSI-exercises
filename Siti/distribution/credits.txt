@@ -1,0 +1,34 @@
+=================================================
+	CREDITS
+=================================================
+
+- Bootstrap - http://getbootstrap.com/docs/4.0/getting-started/introduction
+
+- Owl Carousel - https://owlcarousel2.github.io/OwlCarousel2/
+
+- jQuery Waypoints - http://imakewebthings.com/waypoints/
+
+- animate.css - https://daneden.github.io/animate.css/
+
+- jQuery Parallax - https://github.com/pixelcog/parallax.js/
+
+- jQuery Counter Up - https://github.com/bfintal/Counter-Up
+
+- Nette Framework - http://nette.org/en/
+
+
+=================================================
+	FONTS
+=================================================
+
+- Roboto ([https://www.google.com/fonts/specimen/Roboto](https://www.google.com/fonts/specimen/Roboto))
+- Roboto Slab ([http://www.google.com/fonts/specimen/Roboto+Slab](http://www.google.com/fonts/specimen/Roboto+Slab))
+
+
+
+=================================================
+	IMAGES
+=================================================
+
+- Markus Spiske ([https://www.flickr.com/photos/125167502@N02/](https://www.flickr.com/photos/125167502@N02/))
+- Photos for demo purposes [IM FREE](http://www.imcreator.com/free)

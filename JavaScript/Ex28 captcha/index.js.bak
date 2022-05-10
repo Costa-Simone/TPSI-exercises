@@ -132,7 +132,7 @@ window.onload = function(){
 		_btnGeneraCaptcha.disabled = true;
 	}
 	function invia() {
-		if(!_txtUser.classList.contains("bordoRosso") && !_txtPwd.classList.contains("bordoRosso") && _imgOk.src.endsWith("/ok.png")) {
+		if(!_txtUser.classList.contains("bordoRosso") && !_txtPwd.classList.contains("bordoRosso") && !_imgOk.src.endsWith("nok.png")) {
 			window.location.href = "pagina2.html";
 		}
 		else {
