@@ -2,3 +2,7 @@
 footer.main-footer p.social a:nth-of-type(3) {
     background-color: rgb(29, 161, 242);
 }
+
+footer.main-footer p.social a:nth-of-type(4) {
+    background-color: #ab40ff;
+}
