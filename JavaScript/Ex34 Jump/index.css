@@ -1,0 +1,38 @@
+	* {
+		padding:0;
+		margin:0;
+	}
+	
+	h1{
+		margin:40px;
+		text-align:center;
+		font-size:30pt;
+	}
+   
+	#wrapper{
+		width: 980px;
+		height:210px;
+		border:1px solid black;
+		margin:10px auto;
+	}
+	
+	#pulsanti{
+		text-align:center;
+	}		
+
+	#pulsanti input{
+		display:inline-block;
+		text-align:center;
+		width:120px;
+		height:40px;
+		font-wight:bold;
+		font-size:16pt;
+	}
+	
+	.cella {
+		display:inline-block;
+		width:16px;
+		height:16px;
+		margin:0px;
+		background-color:rgb(252, 252, 252);
+	}	
