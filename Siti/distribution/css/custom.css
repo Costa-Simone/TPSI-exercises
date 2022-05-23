@@ -6,3 +6,7 @@ footer.main-footer p.social a:nth-of-type(3) {
 footer.main-footer p.social a:nth-of-type(4) {
     background-color: #ab40ff;
 }
+
+.immagini {
+    height: 225px;
+}
