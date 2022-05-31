@@ -1,0 +1,30 @@
+h1{
+	text-align:center;
+}
+
+input{
+	margin-bottom:15px;
+	margin-left:6px;
+	margin-right:15px;
+}
+
+button{
+	display:inline-block;
+	width:60px;
+	height:40px;			
+	margin:2px;
+	padding:10px;
+	text-align:center;
+	line-height:20px;
+	background-color: #ddd;
+	border-radius:5px;
+}
+
+#log{
+	width:400px;
+	height:400px;
+	overflow:auto;
+	border:1px solid #ccc;
+	margin-top:20px;
+	background-color:#eee;
+}
