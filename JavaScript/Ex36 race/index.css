@@ -1,0 +1,32 @@
+
+h1{
+	text-align:center;
+	margin:10px;
+	margin-top:25px;
+	font-size:25pt;
+}
+
+body>input[type=button]{
+	display:block;
+	width:70px;
+	margin:20px auto;
+}
+
+#wrapper{
+	width:664px;
+	margin:10px auto;
+}
+
+.cella{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	padding:0;
+	margin:1px;
+	background-color:rgb(127, 127, 127); 
+	color:white;
+	font-size:10px;
+	text-align:center;
+	line-height:20px;
+	background-size:cover;
+}
