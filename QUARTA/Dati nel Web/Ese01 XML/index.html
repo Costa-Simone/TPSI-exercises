@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>XML</title>
+    <meta charset="utf-8" />
+	<script type="application/javascript" src="bookstore.js"></script>
+	<script type="application/javascript" src="index.js"></script>
+</head>
+<body>
+    <h1>Book Store</h1>
+	<input type="button" onclick="crea()" value="Crea il bookStore all'interno del localStorage">
+	<input type="button" onclick="visualizza()" value="Visualizza Tabella Libri">
+	<br> 
+	<br>
+	<table border="1">
+		<thead>			
+			<tr>
+				<th>Titolo</th>
+				<th>Categoria</th>
+				<th>Lingua</th>
+				<th>Autori</th>
+				<th>Anno</th>
+				<th>Prezzo</th>
+			</tr>			
+		</thead>
+		<tbody id="tabLibri">
+
+		</tbody>
+	</table>
+</body>
+</html>
