@@ -15,6 +15,8 @@ function visualizza() {
     let _tabLibri = document.getElementById("tabLibri");
     let _child = root.children;
 
+    _tabLibri.innerHTML = "";
+
     console.log("Children: ", root.children.length);
     console.log("ChildNods: ", root.childNodes.length);
 
