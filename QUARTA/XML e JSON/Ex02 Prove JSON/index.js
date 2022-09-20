@@ -31,4 +31,46 @@ function esegui() {
     studente2["nome"] = "Minnie";
 
     console.log(studente["nome"]);
+
+    console.log("Scansione campi JSON");
+
+    for(let key in studente) {
+        let output = studente[key];
+
+        if(typeof(studente[key]) == "object") {
+            output = JSON.stringify(studente[key]);
+        }
+
+        console.log(key + " = " + output + ": " + typeof(studente[key]));
+    }
+
+    console.log("Visualizzazione dati vettore enumerativo interno");
+
+    for(let image of studente["images"]) {
+        console.log(image);
+    }
+
+    console.log("Visualizzazione dati vettore associativo interno");
+
+    for(let key in studente["pos"]) {
+        console.log(studente["pos"][key]);
+    }
+
+    studente["pos"]["x"]++;
+
+    console.log(studente["pos"]["x"]);
+    console.log("Visualizzare il vettore enumerativo delle chiavi");
+
+    let keys = Object.keys(studente);
+
+    for(let key of keys) {
+        console.log(key);
+    }
+
+    console.log("Numero di chiavi: " + keys.length);
+
+    console.log("Richiamo di una funzione");
+
+    studente["stampa"]();
+    console.log(studente["fullName"]());
 }
