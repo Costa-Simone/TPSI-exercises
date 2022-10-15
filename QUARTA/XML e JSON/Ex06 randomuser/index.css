@@ -1,0 +1,67 @@
+#wrapper{
+	width:160px;
+	margin: 20px auto;
+	background-color:#ffa;
+	font-size:18pt;
+	padding:20px;
+	padding-left:40px;
+	font-style:italic;
+	font-weight:bold;
+	border-radius:15px;
+	border:1px solid blue;
+}
+
+#table{
+	background-color:#ddd;
+	margin: 20px auto;
+	padding:10px;
+	width:700px;
+	border-radius:15px;
+	border:1px solid blue;
+}
+
+rd {
+	text-align: center;
+}
+
+#pulsanti{
+	width:420px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color:#ffa;
+	border-radius:15px;
+	border:1px solid blue;
+	overflow:auto;
+}
+
+#pulsanti input{
+	display : block;
+	float:left;
+	width:80px;
+	margin:5px;
+	padding:10px;
+	text-align:center;
+	font-weight: 600;
+	border-radius:5px;
+}
+
+#pulsanti p{
+	float:left;
+	width:25px;
+	margin:5px;
+	padding:10px;
+	text-align:center;
+	font-weight: 600;
+}
+
+#dettagli{
+	background-color:#ddd;
+	margin: 20px auto;
+	padding:5px;
+	width:350px;
+	height:220px;
+	border-radius:15px;
+	border:1px solid blue;
+	text-align: center;
+}
+		

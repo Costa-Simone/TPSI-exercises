@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Arial", "Verdana", sans-serif;
+}
+
+body{
+    background-color: lavender;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 30pt;
+}
+
+table{
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid black;     
+    background-color: white;
+	border-radius:6px;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 15pt;
+}
+
+th{
+    color: red;
+}
+
+.dettagli{
+    background-color: white;
+    display: grid; 
+    width: 400px;
+    grid-template-columns: 140px auto;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+	grid-column-gap:5px;
+    grid-row-gap:5px;
+    margin: 10px auto;
+    border: 1px solid black;
+	border-radius:6px;
+}
+
+.dettagli > *{
+    line-height: 40px;
+    overflow: auto;
+}
+
+.contenitorePulsantiNavigazione{
+    margin: 10px auto;
+    width: 450px;
+	/* text-align:center; */
+}
+
+.pulsantiNavigazione{
+	padding : 5px 10px;
+	width:100px;
+	margin:5px 0;
+	border-radius:6px;
+}
+
+/* eliminaPerCategoria */
+.pulsantiNavigazione:last-of-type{ 
+	width:150px;
+}
