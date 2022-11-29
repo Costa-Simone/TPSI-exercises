@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: Rust;
+    src: url(font/IntroRustG-Base2Line.otf);
+}
+
+header {
+    font-family: Rust;
+    font-size: 35pt;
+    width: 75%;
+	text-align:center;
+    margin: 15px auto;
+}
+
+/* ******************* Elenco Articoli ***************** */
+
+#elencoArticoli {
+    width:820px;
+    margin: 0 auto;
+	padding:10px;
+	background-color:#fff;
+}
+
+.article{
+    float: left;
+	margin:18px;
+}
+.article .image {
+    height: 130px;
+    display: block;
+}
+.article .image:hover {
+    cursor:pointer;
+}
+.article .name {
+    text-align: center;
+	height:20px;
+}
+
+
+/* ******************* Dettagli articolo ***************** */
+.details {
+    border: 1px solid lightgray;
+    border-radius: 2px;
+	width:820px;
+    margin-top: 12px;
+	margin-left: 10px;
+	
+	margin: 20px auto;  
+	height:350px;
+	clear:both;
+}
+.detail-close {
+    text-align: right;
+	margin-top: 10px;
+    margin-right: 20px;
+}
+.detail-img {
+    float: left;
+    width: 400px;
+	margin:20px;
+	margin-top:0;
+	text-align:center;
+}
+.detail-img img{
+    /* width: 380px; */
+	height:300px;
+}
+.detail-info {
+    float: left;
+    width:380px;
+    text-align: center;
+}
+.detail-close span:hover { 
+	text-decoration: underline; 
+	cursor:pointer;
+}
+
+/* ********************* item di descrizione dell'articolo ***************** */
+.item-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 50px;
+
+}
+.item-add, #btnCarrello {
+	display:block;
+    margin: 15px auto;
+    width: 200px;
+    /* background: none repeat scroll 0 0 #FFFFFF; */
+	background-color:white;
+    border: 1px solid #E8E7DC;
+    letter-spacing: 2px;
+    color: #525049;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 20px;
+}
+.item-add:hover, #btnCarrello:hover { 
+	background-color: #F8F8F3; 
+	cursor:pointer;
+}
+
+
+/* ************** carrello ************/
+#carrello  {	
+    margin: 10px auto;
+	padding:20px;
+	width:900px;
+	background-color:#ddd;
+	display:none;
+}
+#carrello table{
+	margin:0 auto;
+    width: 800px;
+}
+#carrello table th {
+	height:40px;
+	font-size:14pt;
+    background-color: #eee;
+}
+#carrello table  td{
+	height:35px;
+	font-size:13pt;
+    background-color: #eee;
+	text-align:center;
+}
+
+footer {
+	clear:both;
+    background: #3a3a3a;
+    width: 100%;
+	height:25px;
+    text-align: center;
+    color: #F8F8F3;
+    padding: 20px 0;
+	margin-top:20px;
+}
+

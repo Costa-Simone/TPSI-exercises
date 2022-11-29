@@ -1,0 +1,27 @@
+h2{
+	text-align:center;
+	margin:30px;
+	font-size:20pt;
+}
+
+
+#wrapper {
+	/* .DataTable estende la tabella per l'intera larghezza del genitore */
+	width:70%;
+	margin:10px auto;
+	border:1px solid black;
+}
+
+table{
+	margin:10px auto;
+}
+
+table thead th{
+	text-align:left;
+	background-color:#BBF;
+	padding:5px;
+}
+
+table tbody td{
+	background-color:#FFB;
+}

@@ -1,0 +1,13 @@
+h1 {
+	text-align:center;
+	margin:20px;
+}
+
+ul{
+	list-style:none;
+}
+
+ul li {
+	margin: 5px;
+	width:200px;
+}

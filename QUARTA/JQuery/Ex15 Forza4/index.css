@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+   text-align: center;
+   font-size: 40pt;
+   margin: 15px;
+}
+
+#header {
+    width: 420px;     /* 60 * 7 */
+    margin: 0 auto;
+	padding: 5px; 
+	background-color: #DDD;
+    overflow: auto;
+    position: relative;
+}
+
+#wrapper {
+    width: 420px;     /* 60 * 7 */
+    margin: 0 auto;
+	padding: 5px;     /* Compenso i 5+5 di MARGIN delle pedine interne */
+	background-color: rgb(20,20,255);
+    overflow: auto;
+	position: relative; /* per la pedina di discesa che avrà position absolute */
+}
+
+.pedina {
+    width: 50px;
+    height: 50px;
+    margin: 5px;    /* totale 60 x 60 */
+    padding: 0;
+    border-radius: 50%;
+	background-color: #BBB;
+    float: left;
+}
+
+

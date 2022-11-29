@@ -1,0 +1,39 @@
+#pulsanti {
+    width: 200px;
+	height: 40px;
+    text-align: center;
+	line-height: 40px;
+    border: 1px solid black;
+	border-radius: 15px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.lampadina {
+    width: 150px;
+    height: 273px;
+    margin: 0px auto;
+    background-image: url(lampadina.png);
+    background-color: #CCC;
+}
+
+.accesa {
+    background-color: #FFA;
+}
+
+.pulsanteDescrizione {
+	width:160px;
+	height:40px;
+	text-align:center;
+	line-height:40px;	
+	background-color:#aaa;
+	text-decoration: underline;						
+	font-size:14pt;
+	cursor:pointer;
+	border-radius:10px;
+	margin-left:100px;
+}
+
+.contenuto {
+	/* definito dinamicamente nel file js */
+}

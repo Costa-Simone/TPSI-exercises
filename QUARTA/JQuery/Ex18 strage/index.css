@@ -1,0 +1,53 @@
+html{
+	overflow:hidden;
+}
+
+
+h1{
+	font-size:30pt;
+	text-align:center;
+}
+
+#wrapper{
+	height:800px;
+	overflow:auto;
+}
+
+.orologio{
+	margin:0;
+	padding:0;
+	width:140px;
+	font-size:30pt;
+	font-weight:bold;
+	position:absolute;
+	top:26px;
+	right:40px;
+}
+
+.voto{
+	height: 80px;
+	font-size:26pt;
+	font-weight:bold;
+	text-align:center;
+	color:red;	
+}
+
+.buttonEnabled{
+   margin:15px;
+   width:100px;
+   height:40px;
+   border-radius:6px;
+   font-size:14pt;
+   background-color:cyan;
+   color:#222
+}
+
+.buttonDisabled{
+   margin:15px;
+   width:100px;
+   height:40px;
+   border-radius:6px;
+   font-size:14pt;
+   background-color:#ccc;
+   color:#222
+}

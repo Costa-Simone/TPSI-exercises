@@ -1,0 +1,104 @@
+<!doctype  html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Rivendita Automobili</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css" />
+
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+	
+	<script src="libreria.js"></script>  
+	<script src="index.js"></script>
+</head>
+
+<body>
+	<h1 align="center">Rivendita Automobili Usate</h1>
+	<div class="container">
+		<div class='row'>
+			<div class='col-md-2 col-lg-4 '></div>					
+			<div class='col-sm-12 col-md-8 col-lg-4'> 
+				<div class="form-group">
+					<label for="lstMarche">
+						Seleziona la Marca che ti interessa:
+					</label>
+					<select class="form-control" id="lstMarche">
+					</select>	
+				</div>	
+				<div class="form-group">
+					<label for="lstModelli">
+						Seleziona il Modello che ti interessa:
+					</label>
+					<select class="form-control" id="lstModelli">
+					</select>	
+				</div>							
+			</div>
+			<div class=' col-md-2 col-lg-4'></div>
+		</div>
+		
+		<div class='row'>
+			<div class='col-lg-1 col-xl-2'> </div>					
+			<div class='col-sm-12 col-lg-10 col-xl-8 table-responsive'>
+				<table class='table table-striped  table-sm'>
+				
+				</table>
+			</div>
+			<div class='col-lg-1 col-xl-2'> </div>					
+		</div>	
+		
+		<div class='row'>
+			<div class='col-md-2 col-lg-4'> </div>					
+			<div class='col-sm-12 col-md-8 col-lg-4'> 
+				<div class="form-group">
+					<label for="txtId">Id:</label>
+					<input type="text" id="txtId" readonly >
+				</div>	
+				<div class="form-group">
+					<label for="txtNome">Nome:</label>
+					<input type="text" id="txtNome" readonly >
+				</div>	
+				<div class="form-group">
+					<label for="txtAlimentazione">Alimentazione:</label>
+					<input type="text" id="txtAlimentazione" readonly >
+				</div>	
+				<div class="form-group">
+					<label for="txtCilindrata">Cilindrata:</label>
+					<input type="text" id="txtCilindrata" readonly >
+				</div>	
+				<div class="form-group">
+					<label for="txtTarga">Targa:</label>
+					<input type="text" id="txtTarga" readonly >
+				</div>	
+				<div class="form-group">
+					<label for="txtColore">Colore:</label>
+					<input type="text" id="txtColore" readonly >
+				</div>	
+				<div class="form-group">
+					<label for="txtAnno">Anno:</label>
+					<input type="text" id="txtAnno" readonly >
+				</div>	
+				<div class="form-group">
+					<label for="txtKm">Km:</label>
+					<input type="text" id="txtKm" >
+				</div>	
+				<div class="form-group">
+					<label for="txtPrezzo">Prezzo:</label>
+					<input type="text" id="txtPrezzo" >				
+				<div class="form-group"  style="text-align:center; margin-top:8px;" >
+					<img id="imgLarge">
+				</div>	
+				
+				<div class="form-group">
+					<input type="button" id="btnAggiorna" 
+						   style="width:100px height:24px; font-size:8pt; margin-left:8px" 
+					       class="btn btn-secondary btn-xs" value="aggiorna prezzo e km">
+				</div>	
+
+			</div>
+			<div class='col-md-2 col-lg-4'> </div>
+		</div>		
+	</div>					
+</body>
+</html>

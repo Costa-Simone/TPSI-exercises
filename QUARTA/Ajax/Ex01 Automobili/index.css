@@ -1,0 +1,38 @@
+h1{
+	margin:15px;
+}
+
+table{
+	border:1px solid #ddd;
+	margin-top:12px;
+}
+table thead tr{
+	background-color:#aaa;
+	color:white;
+	text-align:center;
+}
+table tbody tr td{
+	text-align:center;
+	vertical-align:middle !important;
+}
+
+/* ******************  dettagli  ***************** */
+
+.row:nth-of-type(3) label{
+	font-weight:bold;
+	display:inline-block;
+	width:110px;
+	font-size:9pt;
+	text-align:right;
+}
+
+.row:nth-of-type(3) > div > div:last-of-type{
+	text-align:center; 
+}
+
+
+.row:nth-of-type(3) > div:nth-of-type(2){
+	border:1px solid #ddd;
+	padding:5px;
+	margin-bottom:10px;
+}

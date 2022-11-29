@@ -1,0 +1,50 @@
+* {      
+  padding:0;
+  margin:0;
+}
+
+#frmLogin {
+   width:400px;
+   height:200px;
+   margin:50px auto;
+   padding:12px;
+   background-color:#eee;
+   border-radius:12px;
+   border:1px solid #bbb;
+}
+
+p{
+    padding:7px;
+}
+
+p.titolo{
+   font-weight:bold;
+   font-size:14pt;
+   text-align:center;
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+input{
+   padding:10px;
+   border-radius:10px;   
+   border:1px solid #BBB;
+}
+
+input[type=button]{
+   padding:6px;
+   width:100px;
+   margin-left:260px;
+}
+
+
+input.ok{
+  border-color:#BBB;
+}
+input.nok{
+  border-color:red;
+}
+input.over {
+  border:1px solid blue;
+  background-color:#CCF;
+}

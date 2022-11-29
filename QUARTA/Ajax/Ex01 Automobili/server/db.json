@@ -1,0 +1,553 @@
+{
+  "marche": [
+    {
+      "id": 1,
+      "nome": "FIAT"
+    },
+    {
+      "id": 2,
+      "nome": "AUDI"
+    },
+    {
+      "id": 3,
+      "nome": "MERCEDES"
+    },
+    {
+      "id": 4,
+      "nome": "FORD"
+    }
+  ],
+  
+  "modelli": [
+    {
+      "id": 1,
+      "nome": "Panda",
+      "codMarca": 1,
+      "cilindrata": 1200,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 2,
+      "nome": "Panda",
+      "codMarca": 1,
+      "cilindrata": 1400,
+      "alimentazione": "diesel"
+    },
+    {
+      "id": 3,
+      "nome": "Tipo",
+      "codMarca": 1,
+      "cilindrata": 1500,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 4,
+      "nome": "Tipo",
+      "codMarca": 1,
+      "cilindrata": 1600,
+      "alimentazione": "diesel"
+    },
+    {
+      "id": 5,
+      "nome": "500",
+      "codMarca": 1,
+      "cilindrata": 1400,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 6,
+      "nome": "500L",
+      "codMarca": 1,
+      "cilindrata": 1600,
+      "alimentazione": "diesel"
+    },
+    {
+      "id": 7,
+      "nome": "A4",
+      "codMarca": 2,
+      "cilindrata": 1800,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 8,
+      "nome": "A4",
+      "codMarca": 2,
+      "cilindrata": 2000,
+      "alimentazione": "diesel"
+    },
+    {
+      "id": 9,
+      "nome": "A6",
+      "codMarca": 2,
+      "cilindrata": 1800,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 10,
+      "nome": "A6",
+      "codMarca": 2,
+      "cilindrata": 2000,
+      "alimentazione": "diesel"
+    },
+    {
+      "id": 11,
+      "nome": "classe A",
+      "codMarca": 3,
+      "cilindrata": 1600,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 12,
+      "nome": "classe A",
+      "codMarca": 3,
+      "cilindrata": 1800,
+      "alimentazione": "diesel"
+    },
+    {
+      "id": 13,
+      "nome": "classe B",
+      "codMarca": 3,
+      "cilindrata": 1800,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 14,
+      "nome": "classe B",
+      "codMarca": 3,
+      "cilindrata": 2000,
+      "alimentazione": "diesel"
+    },
+    {
+      "id": 15,
+      "nome": "kuga",
+      "codMarca": 4,
+      "cilindrata": 1800,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 16,
+      "nome": "kuga",
+      "codMarca": 4,
+      "cilindrata": 2000,
+      "alimentazione": "diesel"
+    },
+    {
+      "id": 17,
+      "nome": "cMax",
+      "codMarca": 4,
+      "cilindrata": 1800,
+      "alimentazione": "benzina"
+    },
+    {
+      "id": 18,
+      "nome": "cMax",
+      "codMarca": 4,
+      "cilindrata": 2000,
+      "alimentazione": "diesel"
+    }
+  ],
+  
+  "automobili": [
+    {
+      "id": 1,
+	  "codModello":1,
+	  "colore":"rosso",
+	  "anno": 2012,
+	  "prezzo": 9500,
+	  "img":"img1.jpg",
+	  "targa":"FF777BT",
+	  "km":8000
+    },  
+    {
+      "id": 2,
+	  "codModello":2,
+	  "colore":"grigio",
+	  "anno": 2016,
+	  "prezzo": 14500,
+	  "img":"img2.jpg",
+	  "targa":"FD575TW",
+	  "km":6000
+    },  
+    {
+      "id": 3,
+	  "codModello":3,
+	  "colore":"grigio",
+	  "anno": 2010,
+	  "prezzo": 26000,
+	  "img":"img3.jpg",
+	  "targa":"FA875WE",
+	  "km":10000
+    },  
+    {
+      "id": 4,
+	  "codModello":4,
+	  "colore":"nero",
+	  "anno": 2014,
+	  "prezzo": 32000,
+	  "img":"img4.jpg",
+	  "targa":"FD383YA",
+	  "km":20000
+    },  
+    {
+      "id": 5,
+	  "codModello":5,
+	  "colore":"bianco",
+	  "anno": 2015,
+	  "prezzo": 22000,
+	  "img":"img5.jpg",
+	  "targa":"FB291FN",
+	  "km":15000
+    },  
+    {
+      "id": 6,
+	  "codModello":6,
+	  "colore":"nero",
+	  "anno": 2015,
+	  "prezzo": 47000,
+	  "img":"img6.jpg",
+	  "targa":"EZ104AV",
+	  "km":20000
+    },  
+    {
+      "id": 7,
+	  "codModello":7,
+	  "colore":"bianco",
+	  "anno": 2016,
+	  "prezzo": 60000,
+	  "img":"img7.jpg",
+	  "targa":"FB478NE",
+	  "km":15000
+    },  
+    {
+      "id": 8,
+	  "codModello":8,
+	  "colore":"arancione",
+	  "anno": 2014,
+	  "prezzo": 9000,
+	  "img":"img8.jpg",
+	  "targa":"DX190SI",
+	  "km":28000
+    },  
+    {
+      "id": 9,
+	  "codModello":9,
+	  "colore":"celeste",
+	  "anno": 2013,
+	  "prezzo": 11500,
+	  "img":"img9.jpg",
+	  "targa":"JN441AY",
+	  "km":20000
+    },  
+    {
+      "id": 10,
+	  "codModello":10,
+	  "colore":"blu",
+	  "anno": 2014,
+	  "prezzo": 15500,
+	  "img":"img10.jpg",
+	  "targa":"IC275BX",
+	  "km":10000
+    },  
+    {
+      "id": 11,
+	  "codModello":11,
+	  "colore":"grigio",
+	  "anno": 2016,
+	  "prezzo": 17000,
+	  "img":"img11.jpg",
+	  "targa":"GG223MO",
+	  "km":8000
+    },  
+    {
+      "id": 12,
+	  "codModello":12,
+	  "colore":"marrone",
+	  "anno": 2016,
+	  "prezzo": 28000,
+	  "img":"img12.jpg",
+	  "targa":"KA107BK",
+	  "km":15000
+    },  
+    {
+      "id": 13,
+	  "codModello":13,
+	  "colore":"giallo",
+	  "anno": 2015,
+	  "prezzo": 18000,
+	  "img":"img13.jpg",
+	  "targa":"BX145AN",
+	  "km":8000
+    },  
+    {
+      "id": 14,
+	  "codModello":14,
+	  "colore":"bianco",
+	  "anno": 2013,
+	  "prezzo": 14000,
+	  "img":"img14.jpg",
+	  "targa":"FB572NE",
+	  "km":30000
+    },  
+    {
+      "id": 15,
+	  "codModello":15,
+	  "colore":"viola",
+	  "anno": 2014,
+	  "prezzo": 9000,
+	  "img":"img15.jpg",
+	  "targa":"SW718NA",
+	  "km":12000
+    },  
+    {
+      "id": 16,
+	  "codModello":16,
+	  "colore":"nero",
+	  "anno": 2013,
+	  "prezzo": 22000,
+	  "img":"img16.jpg",
+	  "targa":"EA431VS",
+	  "km":3000
+    },  
+    {
+      "id": 17,
+	  "codModello":17,
+	  "colore":"nero",
+	  "anno": 2016,
+	  "prezzo": 35000,
+	  "img":"img17.jpg",
+	  "targa":"YN441DC",
+	  "km":20000
+    },  
+    {
+      "id": 18,
+	  "codModello":18,
+	  "colore":"blu",
+	  "anno": 2016,
+	  "prezzo": 22000,
+	  "img":"img18.jpg",
+	  "targa":"DX210XN",
+	  "km":10000
+    },
+    {
+      "id": 19,
+	  "codModello":18,
+	  "colore":"rosso",
+	  "anno": 2012,
+	  "prezzo": 9500,
+	  "img":"img19.jpg",
+	  "targa":"AF777BT",
+	  "km":8000
+    },  
+    {
+      "id": 20,
+	  "codModello":17,
+	  "colore":"grigio",
+	  "anno": 2016,
+	  "prezzo": 14500,
+	  "img":"img20.jpg",
+	  "targa":"AD575TW",
+	  "km":6000
+    },  
+    {
+      "id": 21,
+	  "codModello":16,
+	  "colore":"grigio",
+	  "anno": 2010,
+	  "prezzo": 26000,
+	  "img":"img21.jpg",
+	  "targa":"AA875WE",
+	  "km":10000
+    },  
+    {
+      "id": 22,
+	  "codModello":15,
+	  "colore":"nero",
+	  "anno": 2014,
+	  "prezzo": 32000,
+	  "img":"img22.jpg",
+	  "targa":"AD383YA",
+	  "km":20000
+    },  
+    {
+      "id": 23,
+	  "codModello":14,
+	  "colore":"bianco",
+	  "anno": 2015,
+	  "prezzo": 22000,
+	  "img":"img23.jpg",
+	  "targa":"AB291FN",
+	  "km":15000
+    },  
+    {
+      "id": 24,
+	  "codModello":13,
+	  "colore":"nero",
+	  "anno": 2015,
+	  "prezzo": 47000,
+	  "img":"img24.jpg",
+	  "targa":"AZ104AV",
+	  "km":20000
+    },  
+    {
+      "id": 25,
+	  "codModello":12,
+	  "colore":"bianco",
+	  "anno": 2016,
+	  "prezzo": 60000,
+	  "img":"img25.jpg",
+	  "targa":"AB478NE",
+	  "km":15000
+    },  
+    {
+      "id": 26,
+	  "codModello":11,
+	  "colore":"arancione",
+	  "anno": 2014,
+	  "prezzo": 9000,
+	  "img":"img26.jpg",
+	  "targa":"AX190SI",
+	  "km":28000
+    },  
+    {
+      "id": 27,
+	  "codModello":10,
+	  "colore":"celeste",
+	  "anno": 2013,
+	  "prezzo": 11500,
+	  "img":"img27.jpg",
+	  "targa":"AN441AY",
+	  "km":20000
+    },  
+    {
+      "id": 28,
+	  "codModello":9,
+	  "colore":"blu",
+	  "anno": 2014,
+	  "prezzo": 15500,
+	  "img":"img28.jpg",
+	  "targa":"AC275BX",
+	  "km":10000
+    },  
+    {
+      "id": 29,
+	  "codModello":8,
+	  "colore":"grigio",
+	  "anno": 2016,
+	  "prezzo": 17000,
+	  "img":"img29.jpg",
+	  "targa":"AG223MO",
+	  "km":8000
+    },  
+    {
+      "id": 30,
+	  "codModello":7,
+	  "colore":"marrone",
+	  "anno": 2016,
+	  "prezzo": 28000,
+	  "img":"img30.jpg",
+	  "targa":"AA107BK",
+	  "km":15000
+    },  
+    {
+      "id": 31,
+	  "codModello":6,
+	  "colore":"giallo",
+	  "anno": 2015,
+	  "prezzo": 18000,
+	  "img":"img31.jpg",
+	  "targa":"AX145AN",
+	  "km":8000
+    },  
+    {
+      "id": 32,
+	  "codModello":5,
+	  "colore":"bianco",
+	  "anno": 2013,
+	  "prezzo": 14000,
+	  "img":"img32.jpg",
+	  "targa":"AB572NE",
+	  "km":30000
+    },  
+    {
+      "id": 33,
+	  "codModello":4,
+	  "colore":"viola",
+	  "anno": 2014,
+	  "prezzo": 9000,
+	  "img":"img33.jpg",
+	  "targa":"AW718NA",
+	  "km":12000
+    },  
+    {
+      "id": 34,
+	  "codModello":3,
+	  "colore":"nero",
+	  "anno": 2013,
+	  "prezzo": 22000,
+	  "img":"img34.jpg",
+	  "targa":"AA431VS",
+	  "km":3000
+    },  
+    {
+      "id": 35,
+	  "codModello":2,
+	  "colore":"nero",
+	  "anno": 2016,
+	  "prezzo": 35000,
+	  "img":"img35.jpg",
+	  "targa":"AN441DC",
+	  "km":20000
+    },  
+    {
+      "id": 36,
+	  "codModello":1,
+	  "colore":"blu",
+	  "anno": 2016,
+	  "prezzo": 22000,
+	  "img":"img36.jpg",
+	  "targa":"AX210XN",
+	  "km":10000
+    },
+    {
+      "id": 37,
+	  "codModello":5,
+	  "colore":"grigio",
+	  "anno": 2011,
+	  "prezzo": 15000,
+	  "img":"img7.jpg",
+	  "targa":"DM756AF",
+	  "km":16200
+    },  
+    {
+      "id": 38,
+	  "codModello":6,
+	  "colore":"bianco",
+	  "anno": 2012,
+	  "prezzo": 32500,
+	  "img":"img8.jpg",
+	  "targa":"CC176AV",
+	  "km":18000
+    },  
+	{
+      "id": 39,
+	  "codModello":5,
+	  "colore":"verde",
+	  "anno": 2018,
+	  "prezzo": 6000,
+	  "img":"img9.jpg",
+	  "targa":"GA123RM",
+	  "km":16200
+    },  
+    {
+      "id": 40,
+	  "codModello":6,
+	  "colore":"lilla",
+	  "anno": 2019,
+	  "prezzo": 9500,
+	  "img":"img10.jpg",
+	  "targa":"GA176AV",
+	  "km":18000
+    } 
+
+  ]
+}

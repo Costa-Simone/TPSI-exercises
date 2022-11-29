@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creazione Dinamica dei Controlli </title>
+	<script type="application/javascript" src="jquery-3.6.1.min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<h1> Aggiunta e Spostamento elementi </h1>
+	<ul>
+	<li><a href="javascript:aggiungi(1);">Aggiungi un elemento a #menu1</a></li>
+	<li><a href="javascript:aggiungi(2);">Aggiungi un elemento a #menu2</a></li>
+	<li><a href="javascript:sposta(1);">Sposta da #menu1 a #menu2</a></li>
+	<li><a href="javascript:sposta(2);">Sposta da #menu2 a #menu1</a></li>
+	<li><a href="javascript:aggiungiPrima(1);">Aggiungi voce prima del primo elemento di #menu1</a></li>
+	<li><a href="javascript:aggiungiPrima(2);">Aggiungi voce prima il primo elemento di #menu2</a></li>
+	<li><a href="javascript:aggiungiDopo(1);">Aggiungi voce dopo del primo elemento di #menu1</a></li>
+	<li><a href="javascript:aggiungiDopo(2);">Aggiungi voce dopo il primo elemento di #menu2</a></li>
+	<li><a href="javascript:replica(1);">Aggiungi voce dopo ogni elemento di #menu1</a></li>
+	<li><a href="javascript:replica(2);">Aggiungi voce dopo ogni elemento di #menu2</a></li>
+	<li><a href="javascript:creazioneConCostruttore();">Creazione con Costruttore </a></li>
+	</ul>
+	
+	<br/>
+	
+	<div id="wrapper">
+		<p> ------- menu1 -------- </p>
+		<ul>
+			<li>menu 1 voce 1</li>
+			<li>menu 1 voce 2</li>
+			<li>menu 1 voce 3</li>
+		</ul>
+
+		<p> ------- menu2 -------- </p>
+		<ul>
+			<li>menu 2 voce 1</li>
+			<li>menu 2 voce 2</li>
+			<li>menu 2 voce 3</li>
+		</ul>
+	</div>
+</body>
+</html>

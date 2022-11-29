@@ -1,0 +1,40 @@
+	    
+#wrapper{
+	width:1440px;
+	margin: 20px auto;
+	overflow:auto;
+}
+
+#wrapper div{
+	float:left;
+	width:160px;
+	background-color:#ffa;
+	margin:10px;
+	padding:20px;
+	padding-left:40px;
+	border-radius:15px;
+	border:1px solid blue;
+}
+
+#wrapper div h3{
+	margin:5px 0 15px 0;	
+}
+	
+#table{
+	background-color:#ddd;
+	margin: 10px auto;
+	padding:10px;
+	width:700px;
+	border-radius:15px;
+	border:1px solid blue;
+	float:left;
+}
+
+th {
+	text-align: left;
+}
+		
+#dettagli{
+	width:350px;
+	height:280px;
+}

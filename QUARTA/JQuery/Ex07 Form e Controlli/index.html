@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ese07</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index.css" />
+    <script type="application/javascript" src="jquery-3.6.1.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<h1>Accesso ai controlli di una form </h1>
+<fieldset>
+  <legend> FORM </legend>
+  <form id="form1">
+	<!-- Text Box -->
+	<label>
+		Campo di Testo <input type="text" value="lorem ipsum" /> 
+	</label>
+	<br/> <br/>
+	
+	<!-- List Box -->
+	<label>
+		Selezione
+		<select>
+		    <!-- Notare che la prima option non ha value -->
+			<option selected>nessun valore</option>
+			<option value="1">uno</option>
+			<option value="2">due</option>
+			<option value="3">tre</option>
+		</select>
+	</label>
+	<br/> <br/>
+
+	<!-- Check Box -->
+	<fieldset style="width:300px">
+		<legend>Campi Checkbox</legend>
+		<label> 
+			<input type="checkbox" name="chk" value="opzione 1" /> 
+			check-1 
+		</label>
+		<label> 
+			<input type="checkbox" name="chk" value="opzione 2"/> 
+			check-2 
+		</label>
+		<label> 
+			<input type="checkbox" name="chk" value="opzione 3" /> 
+			check-3 
+		</label>
+	</fieldset>
+	<br/>
+
+	<!-- Radio Button -->
+	<fieldset style="width:300px">
+		<legend>Campi Radio</legend>
+		<label> <input type="radio" name="opt" value="si" /> si </label>
+		<label> <input type="radio" name="opt" value="no" /> no </label>
+		<label> <input type="radio" name="opt" value="forse" /> forse </label>
+	</fieldset>
+	<br/> 
+
+	<!-- List Box a selezione multipla-->
+	Selezione multipla :
+	<select multiple >
+		<option>nessun valore</option>
+		<option value="1">uno</option>
+		<option value="2">due</option>
+		<option value="3">tre</option>
+	</select>
+  </form>
+</fieldset>
+
+
+<br/> <br/>
+
+<div> SEZ1: Leggi il VALUE dei controlli :</div>
+<p><a href="javascript:visualizza(1);"> Campo di testo</a></p>
+<p><a href="javascript:visualizza(2);"> Voce selezionata nel ListBox</a></p>
+<p><a href="javascript:visualizza(3);"> Elenco di tutti i checkbox (name e value)</a></p>
+<p><a href="javascript:visualizza(4);"> Elenco check box selezionati (value)</a></p>
+<p><a href="javascript:visualizza(5);"> Elenco check box non selezionati (value)</a></p>
+<p><a href="javascript:visualizza(6);"> Radio Button selezionati (value)</a>  </p>
+<p><a href="javascript:visualizza(7);"> Radio Button non selezionati (value)</a></p>
+<p><a href="javascript:visualizza(8);"> Voci selezionate in un List Box a selezione Multiple</a> </p>
+<br/> <br/>
+
+<div> SEZ2: Imposta un nuovo valore :</div>
+<p><a href="javascript:imposta(1);">Text Box</a></p>
+<p><a href="javascript:imposta(2);">List Box</a></p>
+<p><a href="javascript:imposta(3);">Check Box</a></p>
+<p><a href="javascript:imposta(4);">Radio Button</a></p>
+<p><a href="javascript:imposta(5);">List Box selezione multipla</a></p>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+div:not(#wrapper), p{
+	width:70px;
+	height:70px;
+	border:1px solid black;
+	margin:10px;
+	cursor:pointer;
+	background-color:white;	 
+	float:left;
+}
+
+#wrapper{ 
+	background-color:#eee;	 
+	/* per 'sentire' gli elementi float */
+	overflow:auto;
+}	
+
+#txtRis{
+   width:240px;
+   /* sovrascrive height:70 iniziale */
+   height:auto;
+   float:none;
+}				

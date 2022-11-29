@@ -1,0 +1,31 @@
+p {
+	padding:0; 
+	margin:2px 
+} 
+
+h1{
+	text-align:center;
+}
+
+body  fieldset{
+	border-radius:10px;
+}
+
+body > fieldset{
+	width:320px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid black;			
+}
+		
+select:last-of-type{
+	vertical-align:top;
+}
+
+div{
+	width:300px;
+	padding:6px;
+	background-color:#FF4;	
+	font-weight:bold;	
+	font-style:italic;			
+}

@@ -1,0 +1,109 @@
+#wrapper {
+	width: 1050px;	
+	margin:0 auto;
+	padding:0;
+	user-select:none;
+}
+
+/* *********** main frame ***************** */
+#mainFrame{
+    float:right;
+	width:800px;
+    margin:10px;
+}
+
+/* immagine roulette */
+#mainFrame img{
+    margin:10px;
+	border-radius:10px;
+	vertical-align:middle;
+}
+
+/* numeri estratti */
+#mainFrame span{
+	display:inline-block;
+	width:75px;
+	height:72px;
+	margin-left:10px;
+	padding-top:3px;
+	text-align:center;
+	font-size:42pt;
+	font-weight:bold;
+	border-radius:50%;
+	vertical-align:middle;
+	background-color:#eee;
+	color:black;  /* white; */
+}
+	
+/* tappeto */
+#mainFrame>div{
+	width:800px;
+	height:292px;
+	background-image:url(img/tappeto.png);
+	border-radius:10px;
+	background-size:contain;
+	position:relative;	 
+}
+
+/* classi da assegnare dinamicamente */
+.casella{
+	position:absolute;
+	width:47px;
+	height:47px;
+	padding:0;
+	margin-left:3px;
+	margin-right:3px;
+	margin-top:3px;
+	margin-bottom:3px;
+	/* larghezza effettiva 47 + 3 + 3 = 53 */
+	/* altezza effettiva 47 + 3 + 3 = 53 */	 
+	background-color:rgba(0,0,0, 0.20); 
+}
+.fiche{
+	position:absolute;
+	width:47px;
+	height:47px;
+	padding:0;
+	margin:0;
+    background-image:url(img/fiche.png);
+	background-size:contain;
+}
+
+
+/* *********** left frame ***************** */
+#leftFrame{
+	float:left;
+	width: 200px;   
+	margin:10px;
+	padding-top:240px;
+	text-align:center;
+}
+
+#leftFrame div{
+	width:50px;
+	height:50px;
+	background-image:url(img/fiche.png);
+	margin:0 auto;
+}
+
+#leftFrame h3{
+	margin-top:20px;
+	margin-bottom:5px;
+}
+
+#leftFrame p{
+	margin-top:0;
+	margin-bottom:20px;
+	font-size:26pt;
+	font-weight:bold;	
+}
+
+#leftFrame button{
+	width:180px;
+	height:40px;
+	margin:0 auto;
+	font-size:16pt;
+	font-weight:bold;
+	border-radius:10px;
+	box-shadow:4px 4px 2px;
+}

@@ -1,0 +1,83 @@
+#mainWrapper{
+	width:180px;
+	margin: 20px auto;
+	background-color:#ffa;
+	font-size:13pt;
+	padding:20px;
+	padding-left:35px;
+	font-style:italic;
+	font-weight:bold;
+	border-radius:15px;
+	border:1px solid blue;
+}
+
+#mainWrapper select{
+	width:100px;
+	margin:10px 30px;
+	padding:3px;
+}
+
+table{
+	background-color:#ddd;
+	margin: 20px auto;
+	padding:10px;
+	width:700px;
+	overflow:auto;
+	border-radius:10px;
+	border:1px solid blue;
+}
+
+table thead { 
+    display:block;
+	height:25px; 
+	background-color:#ffa; 
+}
+
+table tbody {
+	display:block;
+	height: 240px; 	 
+	overflow-y: auto;    
+}
+
+table th{
+	width:135px;
+}
+
+table td{
+	width:135px;
+	text-align:center;
+}
+
+#detailsWrapper{
+	background-color:#ddd;
+	margin: 20px auto;
+	padding:15px;
+	width:350px;
+	height:220px;
+	border-radius:15px;
+	border:1px solid blue;
+	text-align:center;
+}
+
+#buttonsWrapper{
+	width:450px;
+	margin: 15px auto;
+	padding: 10px;
+	padding-left:40px;
+	background-color:#ffa;
+	border-radius:10px;
+	border:1px solid blue;
+}
+
+#buttonsWrapper button, #buttonsWrapper p{
+	display:inline-block;
+	width:80px;
+	margin:5px;
+	padding:10px;
+	text-align:center;
+	font-weight: 600;
+	border-radius:5px;
+}
+#buttonsWrapper p{
+	width:25px;
+}

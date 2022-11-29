@@ -1,0 +1,50 @@
+html,body  {
+	background-color:#999;
+	text-align:center;
+	margin-top:20px;
+} 
+h2{
+	color:#fff;
+}
+h3{
+	color:#ccc;
+}
+
+#wrapper{
+	margin:10px auto;
+	width:100px;
+	height:100px;
+	padding:6px;
+	border: 1px solid #444;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px #555; 
+	background-color:#fff;
+}
+
+/* width totale : 38 + (2+2+2)*2 = 50px */
+.shape{
+    height:39px;
+    width:39px;
+	display:inline-block;
+	padding:0px;
+	margin:2px;
+	border:2px #fff solid; 
+	border-radius:50%;
+	box-shadow: 2px 2px 2px #888; 
+	background-color: #eee;
+}
+.shape:hover{
+	cursor:pointer;
+}
+
+
+.selected{
+	
+}
+.blue{
+	background-color:blue;	
+}
+.red{
+	background-color:red;	
+}
+

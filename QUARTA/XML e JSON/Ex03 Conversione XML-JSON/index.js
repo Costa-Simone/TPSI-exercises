@@ -8,6 +8,7 @@ function converti() {
     let xmlDoc = parser.parseFromString(xml, "text/xml");
     let root = xmlDoc.documentElement;
     let JSONLibri = [];
+    let json;
 
     for(let book of root.children) {
         let JSONLibro = {};
@@ -52,4 +53,10 @@ function converti() {
 
         JSONLibri.push(JSONLibro);
     }
+
+    alert("Conversione eseguita correttamente!");
+
+    json = JSON.stringify(JSONLibri);
+
+    localStorage.setItem("bookstore_json", json);
 }
